@@ -43,8 +43,15 @@ body {
 }
 
 @media print {
-   body { display: block;  padding: 0 !important; }
-   .page { margin: 0 !important; }
+   body {
+      display: block;
+      padding: 0 !important;
+   }
+   .page {
+      margin: 0 !important;
+      height: auto !important;
+      min-height: 11in;
+   }
 }
 
 .resume-block {
@@ -102,6 +109,7 @@ body {
         section {
            > p, > ul {
               clear: both; padding-left: 3em;
+              line-height: 1.3em;
 
               h2 { font-style: italic; }
               h2, p { display: inline; }
@@ -127,7 +135,7 @@ body {
       &when(@debug) { background-color: darkorange; }
 
       order: 2;
-      width: 70px; height: 70px; margin-left: 0.2em;
+      width: 50px; height: 50px; margin-left: 0.2em;
       background-image: url("assets/itzwarty.github.io_resume_qr.png");
       background-size: contain;
 
@@ -145,7 +153,7 @@ body {
          &when(@debug) { background-color: yellow; }
 
          display: block;
-         font-size: 300%;
+         font-size: 200%;
       }
 
       nav {

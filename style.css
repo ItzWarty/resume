@@ -37,6 +37,8 @@ body {
   }
   .page {
     margin: 0 !important;
+    height: auto !important;
+    min-height: 11in;
   }
 }
 .resume-block {
@@ -85,6 +87,7 @@ body {
 .resume-block > ul .thing section > ul {
   clear: both;
   padding-left: 3em;
+  line-height: 1.3em;
 }
 .resume-block > ul .thing section > p h2,
 .resume-block > ul .thing section > ul h2 {
@@ -113,8 +116,8 @@ body {
 }
 .lead-in .qr-code {
   order: 2;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin-left: 0.2em;
   background-image: url("assets/itzwarty.github.io_resume_qr.png");
   background-size: contain;
@@ -129,7 +132,7 @@ body {
 }
 .lead-in .contents h1 {
   display: block;
-  font-size: 300%;
+  font-size: 200%;
 }
 .lead-in .contents nav {
   line-height: 1em;
