@@ -249,12 +249,15 @@
             </ul>
          </section>
       </div>
-      <div class="page">
+      <div class="page" style="display: none;" id="debug_page">
             <script>
                function toggleStyleSheets(enabled) {
                   Array.prototype.forEach.call(
                      document.styleSheets,
                      function(x) { x.disabled = !enabled; })
+               }
+               if (document.location.search.indexOf("debug") > 0) {
+                  document.getElementById("debug_page").style.display = "";
                }
             </script>
             <a onclick="toggleStyleSheets(false);">[Disable StyleSheets]</a>
