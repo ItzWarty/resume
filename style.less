@@ -38,6 +38,7 @@ body {
    margin: 0 @page_spacing @page_spacing 0;
    padding: 0.5in;
    background-color: white;
+   overflow: hidden !important;
 
    .clearfix();
 }
@@ -107,9 +108,9 @@ body {
         }
 
         section {
+           line-height: 1.3em;
            > p, > ul {
               clear: both; padding-left: 3em;
-              line-height: 1.3em;
 
               h2 { font-style: italic; }
               h2, p { display: inline; }
@@ -224,5 +225,18 @@ body {
          &::after { content: ")"; }
       }
       .role { display: block; clear: left; }
+   }
+}
+
+// Misc fixes for mozilla font rendering
+@-moz-document url-prefix() {
+   .thing {
+      &:not(:last-of-type) {
+         margin-bottom: 0.3em !important;
+      }
+
+      section {
+         line-height: inherit !important;
+      }
    }
 }

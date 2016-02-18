@@ -27,6 +27,7 @@ body {
   margin: 0 1em 1em 0;
   padding: 0.5in;
   background-color: white;
+  overflow: hidden !important;
   overflow: auto;
   zoom: 1;
 }
@@ -83,11 +84,13 @@ body {
   text-align: center;
   flex-grow: 1337;
 }
+.resume-block > ul .thing section {
+  line-height: 1.3em;
+}
 .resume-block > ul .thing section > p,
 .resume-block > ul .thing section > ul {
   clear: both;
   padding-left: 3em;
-  line-height: 1.3em;
 }
 .resume-block > ul .thing section > p h2,
 .resume-block > ul .thing section > ul h2 {
@@ -218,5 +221,13 @@ body {
   .thing .role {
     display: block;
     clear: left;
+  }
+}
+@-moz-document url-prefix() {
+  .thing:not(:last-of-type) {
+    margin-bottom: 0.3em !important;
+  }
+  .thing section {
+    line-height: inherit !important;
   }
 }
