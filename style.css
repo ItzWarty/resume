@@ -12,7 +12,7 @@ a:visited {
 }
 body {
   background-color: gray;
-  font-family: "Trebuchet MS";
+  font-family: 'Courier New';
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ body {
   width: 8.5in;
   height: 11in;
   margin: 0 1em 1em 0;
-  padding: 0.5in;
+  padding: 0.25in;
   background-color: white;
   overflow: hidden !important;
   overflow: auto;
@@ -46,20 +46,20 @@ body {
   margin-bottom: 0.5em;
 }
 .resume-block > h1 {
-  font-family: 'Georgia';
   font-size: 120%;
+  font-family: 'Helvetica';
   padding-bottom: 0.05em;
   margin-bottom: 0.3em;
   border-bottom: 1px solid black;
 }
 .resume-block > ul .thing {
-  font-family: Arial;
   font-size: 80%;
 }
 .resume-block > ul .thing:not(:last-of-type) {
   margin-bottom: 0.5em;
 }
 .resume-block > ul .thing > header {
+  font-family: "Arial";
   display: flex;
   white-space: nowrap;
 }
@@ -85,12 +85,14 @@ body {
   flex-grow: 1337;
 }
 .resume-block > ul .thing section {
+  font-family: "Calibri";
   line-height: 1.3em;
 }
 .resume-block > ul .thing section > p,
 .resume-block > ul .thing section > ul {
   clear: both;
-  padding-left: 3em;
+  padding-left: 2.5em;
+  padding-right: 1em;
 }
 .resume-block > ul .thing section > p h2,
 .resume-block > ul .thing section > ul h2 {
@@ -114,7 +116,7 @@ body {
   list-style: disc;
 }
 .lead-in {
-  margin-top: -0.5em;
+  margin-top: -0.45em;
   display: flex;
 }
 .lead-in .qr-code {
@@ -135,10 +137,12 @@ body {
 }
 .lead-in .contents h1 {
   display: block;
+  font-family: 'Helvetica';
   font-size: 200%;
 }
 .lead-in .contents nav {
   line-height: 1em;
+  font-family: 'Georgia';
 }
 .lead-in .contents nav a {
   margin-right: 0.3em;
