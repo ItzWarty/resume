@@ -114,14 +114,37 @@ body {
            > p, > ul {
               clear: both; padding-left: 2.5em; padding-right: 1em;
 
-              h2 { font-style: italic; }
-              h2, p { display: inline; }
               .single-line { display: block !important; }
               span { white-space: nowrap; }
            }
 
            > ul {
-             list-style: disc;
+             display: block;
+
+             > li {
+                display: flex;
+
+                &:before {
+                   display: block;
+                   width: 0px;
+                   margin-left: -1.0em;
+                   margin-right: 1.0em;
+                   content: '\25AA'
+                }
+
+                > h2 {
+                   font-style: italic;
+                   white-space: nowrap;
+                   flex: 1;
+                   &:after {
+                      display: inline;
+                      content: "\00a0";
+                   }
+                }
+                > p {
+                   flex: 1000;
+                }
+             }
            }
         }
      }
@@ -129,8 +152,6 @@ body {
 }
 
 .lead-in {
-   margin-top: -0.45em; // accounts for top spacing of name header
-
    &when(@debug) { background-color: red; }
    display: flex;
 
@@ -138,7 +159,7 @@ body {
       &when(@debug) { background-color: darkorange; }
 
       order: 2;
-      width: 50px; height: 50px; margin-left: 0.2em;
+      width: 45px; height: 45px; margin-left: 0.2em;
       background-image: url("assets/itzwarty.github.io_resume_qr.png");
       background-size: contain;
 
@@ -155,6 +176,7 @@ body {
       h1 {
          &when(@debug) { background-color: yellow; }
 
+         margin-top: -0.25em; // accounts for top spacing of name header
          display: block;
          font-family: 'Helvetica';
          font-size: 200%;
