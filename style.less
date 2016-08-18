@@ -37,6 +37,7 @@ body {
    height: 11in;
    margin: 0 @page_spacing @page_spacing 0;
    padding: 0.25in;
+   color: #222222;
    background-color: white;
    overflow: hidden !important;
 
@@ -52,6 +53,7 @@ body {
       margin: 0 !important;
       height: auto !important;
       min-height: 11in;
+      color: inherit !important;
    }
 }
 
@@ -60,7 +62,7 @@ body {
 
    > h1 {
       font-size: 120%;
-      font-family: 'Helvetica';
+      font-family: Arial;
       padding-bottom: 0.05em;
       margin-bottom: 0.3em;
       border-bottom: 1px solid black;
@@ -71,25 +73,27 @@ body {
         font-size: 80%;
 
         &:not(:last-of-type) {
-           margin-bottom: 0.5em;
+           margin-bottom: 0.7em;
         }
 
         > header {
-           font-family: "Arial";
            display: flex;
+           font-family: 'Arial';
            white-space: nowrap;
 
            &when(@debug) { background-color: cyan; }
 
            h1 {
               order: 1;
-              font-weight: bold;
               margin-bottom: 0.2em;
+              font-weight: bold;
            }
+
+           address, time, .role { font-weight: bold; }
 
            address {
               order: 2;
-              &:before { content: '\A0|\A0';}
+              &:before { font-style: normal; content: '\A0|\A0'; display: inline; }
            }
 
            time {
@@ -133,9 +137,11 @@ body {
                 }
 
                 > h2 {
+                   font-family: "Verdana";
+                   font-size: 80%;
                    font-style: italic;
                    white-space: nowrap;
-                   flex: 1;
+                   flex: 1 1 auto;
                    &:after {
                       display: inline;
                       content: "\00a0";
@@ -178,7 +184,7 @@ body {
 
          margin-top: -0.25em; // accounts for top spacing of name header
          display: block;
-         font-family: 'Helvetica';
+         font-family: 'Arial';
          font-size: 200%;
       }
 
@@ -186,7 +192,8 @@ body {
          line-height: 1em;
          font-family: 'Georgia';
 
-         a { margin-right: 0.3em; }
+         a { white-space: nowrap; }
+         a:not(:last-of-type) { margin-right: 0.3em; }
          a.icon:before {
             content:"\a0";
             display: inline-block; width: 1em; height: 1em; margin-right: 0.1em;
@@ -236,9 +243,13 @@ body {
       height: inherit;
    }
    .thing {
+      &:not(:last-of-type) {
+         margin-bottom: 1.5em !important;
+      }
       header {
          display: block !important;
          white-space: inherit !important;
+         margin-bottom: 0.3em;
 
          h1, address, time { display: inline; white-space: nowrap; }
          .role { display: block !important; text-align: left !important; }
@@ -251,6 +262,7 @@ body {
          &::after { content: ")"; }
       }
       .role { display: block; clear: left; }
+      section > ul > li:not(:last-of-type) { margin-bottom: 0.3em; }
    }
 }
 
