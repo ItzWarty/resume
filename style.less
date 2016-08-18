@@ -89,10 +89,10 @@ body {
               font-weight: bold;
            }
 
-           address, time, .role { font-weight: bold; }
+         //   address, time, .role { font-weight: bold; }
 
            address {
-              order: 2;
+              order: 3;
               &:before { font-style: normal; content: '\A0|\A0'; display: inline; }
            }
 
@@ -104,10 +104,11 @@ body {
            }
 
            .role {
-              order: 3;
-              text-align: center;
-              flex-grow: 1337;
+              order: 2;
+              flex-grow: 1 1 auto;
+              font-weight: bold;
               &when(@debug) { background-color: red; }
+              &:before { font-style: normal; content: '\A0:\A0'; display: inline; }
            }
         }
 
@@ -261,7 +262,10 @@ body {
          &::before { content: "("; }
          &::after { content: ")"; }
       }
-      .role { display: block; clear: left; }
+      .role {
+         display: block; clear: left; font-weight: inherit !important;
+         &:before { content: "" !important; }
+      }
       section > ul > li:not(:last-of-type) { margin-bottom: 0.3em; }
    }
 }
