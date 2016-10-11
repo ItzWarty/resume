@@ -120,7 +120,7 @@ body {
            line-height: @line-height;
 
            > p, > ul {
-              clear: both; padding-left: 2.0em; padding-right: 1em;
+              clear: both; padding-left: 2.0em; padding-right: 0.5em;
 
               .single-line { display: block !important; }
               span { white-space: nowrap; }
@@ -136,7 +136,7 @@ body {
                    display: block;
                    width: 0px;
                    margin-left: -1.0em;
-                   margin-right: 1.0em;
+                   padding-right: 1.0em;
                    content: '\25AA'
                 }
 
@@ -295,11 +295,14 @@ body {
 @-moz-document url-prefix() {
    .thing {
       &:not(:last-of-type) {
-         margin-bottom: 0.3em !important;
+         margin-bottom: 1.05em !important;
       }
-
-      section {
-         line-height: inherit !important;
+   }
+}
+_:-ms-lang(x), _:-webkit-full-screen, body {
+   .thing {
+      &:not(:last-of-type) {
+         margin-bottom: 1.15em !important;
       }
    }
 }
