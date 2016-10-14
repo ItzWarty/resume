@@ -294,7 +294,16 @@ body {
          padding: 0.5em 0 0 0;
          &:before { content: "\0A" !important; white-space: pre; }
       }
-      section > ul > li:not(:last-of-type) { margin-bottom: 0.3em; }
+      section {
+         > ul > li:not(:last-of-type) { margin-bottom: 0.3em; }
+
+         .hack-right {
+            position: static !important;
+            float: none !important;
+            display: block !important;
+            padding-left: 2em;
+         }
+      }
    }
 }
 
