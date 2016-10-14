@@ -226,8 +226,8 @@ body {
   .page {
     padding: 0 0.3in !important;
     margin: 0;
-    width: auto !important;
-    min-width: 100%;
+    width: 100% !important;
+    min-width: 280px !important;
     height: inherit;
   }
   .page:first-of-type {
