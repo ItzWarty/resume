@@ -127,7 +127,7 @@ body {
 }
 .resume-block > ul .thing section > ul > li > h2 {
   font-family: "Verdana";
-  font-size: 80%;
+  font-size: 8pt;
   font-style: italic;
   white-space: nowrap;
   flex: 1 1 auto;
