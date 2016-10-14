@@ -2,6 +2,8 @@
 @debug: false;
 @force-print: false;
 @line-height: 1.5em;
+@block-spacing: 0.7em;
+@thing-spacing: 1.10em;
 
 .clearfix() {
   overflow: auto;
@@ -60,7 +62,7 @@ body {
 
 .resume-block {
    &:not(:last-child) {
-      margin-bottom: 0.7em;
+      margin-bottom: @block-spacing;
    }
 
    > h1 {
@@ -76,7 +78,7 @@ body {
         font-size: 80%;
 
         &:not(:last-of-type) {
-           margin-bottom: 1.2em;
+           margin-bottom: @thing-spacing;
         }
 
         > header {
@@ -178,7 +180,7 @@ body {
       float: right;
       order: 2;
       box-sizing: border-box;
-      width: 45px; height: 45px; margin-left: 0.2em;
+      width: 48px; height: 48px; margin-left: 0.2em;
       background-image: url("assets/miyu.github.io_resume_qr.png");
       background-size: contain;
 
@@ -195,7 +197,7 @@ body {
       h1 {
          &when(@debug) { background-color: yellow; }
 
-         margin-top: -0.25em; // accounts for top spacing of name header
+         margin-top: -0.12em; // accounts for top spacing of name header
          display: block;
          font-family: 'Arial';
          font-size: 200%;
