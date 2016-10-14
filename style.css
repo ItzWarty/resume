@@ -277,7 +277,7 @@ body {
     content: "\0A" !important;
     white-space: pre;
   }
-  .thing section > ul > li:not(:last-of-type) {
+  .thing section > ul li:not(:last-of-type) {
     margin-bottom: 0.3em;
   }
   .thing section .hack-right {
@@ -285,6 +285,17 @@ body {
     float: none !important;
     display: block !important;
     padding-left: 2em;
+  }
+}
+@media only screen and (max-width: 4.7in) {
+  .thing li {
+    display: block !important;
+  }
+  .thing li:before {
+    position: absolute !important;
+  }
+  .thing li h2 {
+    display: inline !important;
   }
 }
 @-moz-document url-prefix() {
