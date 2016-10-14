@@ -289,11 +289,11 @@ body {
 }
 @-moz-document url-prefix() {
   .thing:not(:last-of-type) {
-    margin-bottom: 1.05em !important;
+    margin-bottom: 1.00em !important;
   }
 }
 _:-ms-lang(x) .thing:not(:last-of-type),
 _:-webkit-full-screen .thing:not(:last-of-type),
 body .thing:not(:last-of-type) {
-  margin-bottom: 1.15em !important;
+  margin-bottom: 1.10em !important;
 }
