@@ -10,22 +10,29 @@ a:visited {
     border-bottom: none;
   }
 }
+html {
+  height: 100%;
+}
 body {
   background-color: gray;
   font-family: 'Courier New';
   padding: 1em;
   display: flex;
+  min-height: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: -1em;
+  margin-right: -1em;
 }
 .page {
   flex-direction: column;
   justify-content: space-between;
   width: 8.5in;
   height: 11in;
-  margin: 0 1em 1em 0;
+  margin-top: 1em;
+  margin-right: 1em;
   padding: 0.35in;
   color: #222222;
   background-color: white;

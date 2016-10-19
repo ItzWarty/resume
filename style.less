@@ -22,16 +22,23 @@ a, a:visited {
    }
 }
 
+html {
+   height: 100%;
+}
+
 body {
    background-color: gray;
    font-family: 'Courier New';
    padding: @page_spacing;
 
    display: flex;
+   min-height: 100%;
    flex-wrap: wrap;
    flex-direction: row;
    align-items: center;
    justify-content: center;
+   margin-top: -@page_spacing;
+   margin-right: -@page_spacing;
 }
 
 .page {
@@ -42,7 +49,8 @@ body {
    justify-content: space-between;
    width: 8.5in;
    height: 11in;
-   margin: 0 @page_spacing @page_spacing 0;
+   margin-top: @page_spacing;
+   margin-right: @page_spacing;
    padding: 0.35in;
    color: #222222;
    background-color: white;
