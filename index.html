@@ -304,7 +304,7 @@
             </ul>
          </section>
       </div>
-      <div class="page" id="debug_page">
+      <div class="page" id="debug_page" style="display: none;">
             <script>
                function toggleStyleSheets(enabled) {
                   Array.prototype.forEach.call(
@@ -312,9 +312,9 @@
                      function(x) { x.disabled = !enabled; })
                }
                window.onload = function() {
-                  if (document.location.search.indexOf("debug") < 0) {
+                  if (document.location.search.indexOf("debug") >= 0) {
                      var debugPage = document.getElementById("debug_page");
-                     debugPage.parentNode.removeChild(debugPage);
+                     debugPage.style.display = "";
                   }
                }
             </script>
