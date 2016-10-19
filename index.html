@@ -43,33 +43,6 @@
             </ul>
          </section>
          <section class="resume-block">
-            <h1>Skills</h1>
-            <ul>
-               <li class="thing">
-                  <section>
-                     <ul>
-                        <li>
-                           <h2>Languages:</h2>
-                           <p>
-                              Proficient in <span>C#</span>, <span>C++</span>, <span>Java</span>, HTML, JavaScript, and CSS.
-                              Experience with Go, PHP, Ruby, Python, F#, x86/x64/z80/CIL, and SQL.
-                           </p>
-                        </li>
-                        <li>
-                           <h2>Technologies:</h2>
-                            <p>
-                              All major platforms.
-
-                              Microsoft Stack (.NET Core, WPF, WinForms, WinAPI, ASP.NET, DirectX, <span>Hyper-V</span>, NuGet, ReSharper). Mono, Node, Docker, Vagrant, VirtualBox, Maven,
-                              OpenCV, AForge, MATLAB, LabVIEW, <span>Git, Svn, P4,</span> Jenkins, WinDbg, IDA.
-                           </p>
-                        </li>
-                     </ul>
-                  </section>
-               </li>
-            </ul>
-         </section>
-         <section class="resume-block">
             <h1>Work Experience</h1>
             <ul>
                <li class="thing">
@@ -303,6 +276,33 @@
                </li>
             </ul>
          </section>
+         <section class="resume-block">
+            <h1>Skills</h1>
+            <ul>
+               <li class="thing">
+                  <section>
+                     <ul>
+                        <li>
+                           <h2>Languages:</h2>
+                           <p>
+                              Proficient in <span>C#</span>, <span>C++</span>, <span>Java</span>, HTML, JavaScript, and CSS.
+                              Experience with Go, PHP, Ruby, Python, F#, x86/x64/z80/CIL, and SQL.
+                           </p>
+                        </li>
+                        <li>
+                           <h2>Technologies:</h2>
+                            <p>
+                              All major platforms.
+
+                              Microsoft Stack (.NET Core, WPF, WinForms, WinAPI, ASP.NET, DirectX, <span>Hyper-V</span>, NuGet, ReSharper). Mono, Node, Docker, Vagrant, VirtualBox, Maven,
+                              OpenCV, AForge, MATLAB, LabVIEW, <span>Git, Svn, P4,</span> Jenkins, WinDbg, IDA.
+                           </p>
+                        </li>
+                     </ul>
+                  </section>
+               </li>
+            </ul>
+         </section>
       </div>
       <div class="page" id="debug_page">
             <script>
@@ -311,14 +311,17 @@
                      document.styleSheets,
                      function(x) { x.disabled = !enabled; })
                }
-               if (document.location.search.indexOf("debug") < 0) {
-                  document.getElementById("debug_page").remove();
+               window.onload = function() {
+                  if (document.location.search.indexOf("debug") < 0) {
+                     var debugPage = document.getElementById("debug_page");
+                     debugPage.parentNode.removeChild(debugPage);
+                  }
                }
             </script>
             <a onclick="toggleStyleSheets(false);">[Disable StyleSheets]</a>
             <a onclick="toggleStyleSheets(true);">[Enable StyleSheets]</a>
             <p>
-               Printing Instructions: Set Paper Size="Letter", Margins="None" in print dialog.
+               Printing Instructions: Paper Size="Letter", Margins="None" in print dialog.
             </p>
             <p>
                Page should be mobile-friendly, though haven't extensively tested that.

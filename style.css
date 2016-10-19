@@ -21,7 +21,8 @@ body {
   justify-content: center;
 }
 .page {
-  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
   width: 8.5in;
   height: 11in;
   margin: 0 1em 1em 0;
@@ -31,6 +32,9 @@ body {
   overflow: hidden !important;
   overflow: auto;
   zoom: 1;
+}
+.page:not(#debug_page) {
+  display: flex;
 }
 @media print {
   body {
@@ -43,9 +47,6 @@ body {
     min-height: 11in;
     color: inherit !important;
   }
-}
-.resume-block:not(:last-child) {
-  margin-bottom: 0.7em;
 }
 .resume-block > h1 {
   font-size: 120%;
@@ -224,6 +225,7 @@ body {
     line-height: 1.5em !important;
   }
   .page {
+    display: block;
     padding: 0 0.3in !important;
     margin: 0;
     width: 100% !important;
@@ -236,7 +238,10 @@ body {
   .page:last-of-type {
     padding-bottom: 0.3in !important;
   }
-  .thing:not(:last-of-type) {
+  .resume-block {
+    margin-bottom: 0.7em;
+  }
+  .thing:not(:last-child) {
     margin-bottom: 1.5em !important;
   }
   .thing header {
@@ -280,22 +285,20 @@ body {
   .thing section > ul li:not(:last-of-type) {
     margin-bottom: 0.3em;
   }
+  .thing section li {
+    display: block !important;
+  }
+  .thing section li:before {
+    position: absolute !important;
+  }
+  .thing section li h2 {
+    display: inline !important;
+  }
   .thing section .hack-right {
     position: static !important;
     float: none !important;
     display: block !important;
     padding-left: 2em;
-  }
-}
-@media only screen and (max-width: 4.7in) {
-  .thing li {
-    display: block !important;
-  }
-  .thing li:before {
-    position: absolute !important;
-  }
-  .thing li h2 {
-    display: inline !important;
   }
 }
 @-moz-document url-prefix() {
