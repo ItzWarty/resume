@@ -45,9 +45,14 @@ body {
   display: flex;
 }
 @media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
   body {
     display: block;
     padding: 0 !important;
+    margin: 0 !important;
   }
   .page {
     margin: 0 !important;
@@ -55,6 +60,9 @@ body {
     min-height: 11in;
     color: inherit !important;
   }
+}
+.resume-block:last-child {
+  margin-bottom: -0.12em;
 }
 .resume-block > h1 {
   font-size: 120%;
