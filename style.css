@@ -12,6 +12,7 @@ a:visited {
 }
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 body {
   background-color: gray;
@@ -213,9 +214,9 @@ body {
 }
 @media only screen and (max-width: 9.7in) and (min-width: 8.7in) {
   body {
-    display: block !important;
-    padding: 0 !important;
-    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
   }
   .page {
     margin-right: 0 !important;
@@ -227,6 +228,7 @@ body {
     background-color: white !important;
     display: block !important;
     padding: 0 !important;
+    margin: 0 !important;
   }
   .lead-in nav {
     line-height: 1.5em !important;
