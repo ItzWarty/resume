@@ -337,6 +337,9 @@
                   if (document.location.search.indexOf("debug") >= 0) {
                      var debugPage = document.getElementById("debug_page");
                      debugPage.style.display = "";
+                  } else {
+                     var debugPage = document.getElementById("debug_page");
+                     debugPage.parentNode.removeChild(debugPage);
                   }
                }
             </script>
