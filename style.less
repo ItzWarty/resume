@@ -1,9 +1,9 @@
 @page_spacing: 1em;
 @debug: false;
-@force-print: true;
+@force-print: false;
 @line-height: 1.5em;
 @fluid-block-spacing: 0.7em;
-@thing-spacing: 0.85em;
+@thing-spacing: 0.8em;
 @name-header-negative-left-margin: -0.02em;
 @name-header-negative-top-margin: -0.18em + @name-header-negative-left-margin;
 @tail-section-negative-margin: @name-header-negative-top-margin;
@@ -200,6 +200,7 @@ body {
 
    &when (@force-leadin-to-right) {
       margin-bottom: -0.05in;
+      flex-direction: column;
    }
 
    .qr-code {
@@ -214,7 +215,7 @@ body {
       &when(@force-leadin-to-right) {
          position: absolute;
          right: 0;
-         width: 0.555in; height: 0.555in; // sponsored by Domino's
+         width: 0.555in; height: 0.555in; // Sponsored by Domino's
       }
 
       box-sizing: border-box;
@@ -248,7 +249,12 @@ body {
 
       nav {
          font-family: 'Calibri';
-         line-height: 1em;
+
+         &when(@force-leadin-to-right) {
+            position: relative;
+            top: -0.05em; // fixes baseline-descent difference of h1 and nav.
+         }
+
 
          a .hack-small-space { font-size: 50%; }
 
