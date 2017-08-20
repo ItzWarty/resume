@@ -3,7 +3,7 @@
 @force-print: false;
 @line-height: 1.5em;
 @fluid-block-spacing: 0.7em;
-@thing-spacing: 0.8em;
+@thing-spacing: 0.85em;
 @name-header-negative-left-margin: -0.02em;
 @name-header-negative-top-margin: -0.18em + @name-header-negative-left-margin;
 @tail-section-negative-margin: @name-header-negative-top-margin;
@@ -215,7 +215,7 @@ body {
       &when(@force-leadin-to-right) {
          position: absolute;
          right: 0;
-         width: 0.555in; height: 0.555in; // Sponsored by Domino's
+         width: 0.53in; height: 0.53in;
       }
 
       box-sizing: border-box;
@@ -231,6 +231,7 @@ body {
       &when(@debug) { background-color: orange; }
 
       flex: 1;
+      align-items: stretch;
 
       &when(@force-leadin-to-right) {
          > * {
