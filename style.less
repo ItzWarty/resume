@@ -56,7 +56,7 @@ body {
    height: 11in;
    margin-top: @page_spacing;
    margin-right: @page_spacing;
-   padding: 0.35in;
+   padding: 0.25in;
    color: #222222;
    background-color: white;
    overflow: hidden !important;
@@ -121,22 +121,28 @@ body {
 
            address {
               order: 3;
-              &:before { font-style: normal; content: '\A0|\A0'; display: inline; }
+              flex-grow: 1;
+
+              font-style: normal;
+              text-align: left;
+              &:before  { font-style: normal; content: '\A0|\A0'; display: inline; }
            }
 
            time {
               order: 4;
-              text-align: right;
               flex-grow: 1;
+
+              text-align: right;
               &when(@debug) { background-color: magenta; }
            }
 
            .role {
               order: 2;
               flex-grow: 1 1 auto;
-              font-weight: bold;
+              //font-weight: bold;
+              //font-style: italic;
               &when(@debug) { background-color: red; }
-              &:before { font-style: normal; content: '\A0:\A0'; display: inline; }
+              &:before { font-style: normal; font-weight:bold;  content: ':\A0'; display: inline; }
            }
         }
 
