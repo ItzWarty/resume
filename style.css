@@ -34,7 +34,7 @@ body {
   height: 11in;
   margin-top: 1em;
   margin-right: 1em;
-  padding: 0.3492in;
+  padding: 0.25in;
   color: #222222;
   background-color: white;
   overflow: hidden !important;
@@ -75,7 +75,7 @@ body {
   font-size: 80%;
 }
 .resume-block > ul .thing:not(:last-of-type) {
-  margin-bottom: 0.9em;
+  margin-bottom: 0.6em;
 }
 .resume-block > ul .thing > header {
   display: flex;

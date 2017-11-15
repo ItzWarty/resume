@@ -4,6 +4,10 @@
 What you did, how you did it, why did it matter.
 Accomplished X as measured by Y by doing Z.
 Include language used next to project.
+
+Refactor
+Impact
+
 -->
 <html>
   <head>
@@ -64,12 +68,12 @@ Include language used next to project.
                      <ul>
                         <li>
                            <p>
-                              Unified knowledge services owned by multiple teams into Java and Flask-based GraphQL API with Node-based React Redux/Saga UI.</br>
+                              Unified knowledge services owned by multiple teams into Java and Flask-based graph API with Node-based React Redux/Saga UI.</br>
                            </p>
                         </li>
                         <li>
                            <p>
-                              Built Slack integrations for internal RFC service with AWS SNS and SQS, leveraging S3, ECS, Docker, and Terraform for deployment.
+                              Increased RFC collaboration via automated Slack notifications, using AWS S3/ECS/SQS/SNS and deployed via Terraform/Docker.
                               <!-- Engineered internal knowledge API and frontend to consolidate company-wide tooling (e.g. org chart queries, RFCs, code dependencies). -->
                            </p>
                         </li>
@@ -107,16 +111,6 @@ Include language used next to project.
                   </section>
                </li>
                <li class="thing">
-               <!--
-
-               What you did, how you did it, why did it matter.
-               Accomplished X as measured by Y by doing Z.
-               Include language used next to project.
-
-               Refactor
-               Impact
-
-               -->
                   <header>
                      <h1><a href="https://www.mixer.com/">Microsoft via Experis</a></h1>
                      <address>Redmond, WA</address>
@@ -127,13 +121,13 @@ Include language used next to project.
                      <ul>
                         <li>
                            <p>
-                              Acquired by Xbox Live (XBL) division as Beam and
+                              Acquired by Xbox Live division as Beam and
                               shipped as Mixer to Xbox One and Windows 10 Creator's Update.
                            </p>
                         </li>
                         <li>
                            <p>
-                              Refactored frequently-regressing legacy accounts system to support Microsoft SSO and JWTs as primary form of authentication.</br>
+                              Refactored frequently-regressing legacy Node accounts system to support Microsoft SSO and JWTs as primary form of authentication.</br>
 
                               Shipped with zero bugs and exhaustive test coverage, leveraging Mocha, Sinon, and TestDouble for TDD with Angular 2.0 for frontend.
                            </p>
@@ -141,19 +135,19 @@ Include language used next to project.
                         <li>
                            <p>
                               Ported C# crypto-based S2S RPC libraries to TypeScript enabling
-                              RESTful API calls from Mixer's Node backend to other XBL services.
+                              RESTful API calls from Mixer's Node backend to other Xbox Live services.
                            </p>
                         </li>
                         <li>
                            <p>
-                              Enabled Grafana-based video ingest/distribution service performance monitoring
-                              by logging Golang backend metrics to InfluxDB.
+                              Enabled Grafana-based video ingest/distribution service stability monitoring
+                              by logging Go-based backend metrics to InfluxDB.
                            </p>
                         </li>
                         <li>
                            <p>
-                              Built chat emote localization, code-based account linking, customer support hooks, and child/region/third-party blocking
-                              leveraging hapi, Redis, Sequelize, and Bluebird. Dockerized development environment to facilitate onboarding.
+                              Additionally: dockerization, chat localization/stats, customer support hooks, region locking, and code-based account linking with Redis.
+                              <!-- leveraging hapi, Redis, Sequelize, and Bluebird. Dockerized development environment to facilitate onboarding. -->
                            </p>
                         </li>
                         <!-- <li> -->
@@ -188,14 +182,24 @@ Include language used next to project.
                         <li>
                            <h2>Built antivirus from scratch:</h2>
                            <p>
-                              Delivered efficient static binary feature extractors for machine-learning-based malware classification.<br/>
-                              Engineered cross-platform kernel-user IPC module and virtualization-based TDD framework and runner.
+                              Delivered efficient static binary feature extractors for ML-based malware classification in C++.<br/>
+                              Engineered C cross-platform kernel-user IPC module and C# VM-based TDD framework and runner.
                            </p>
                         </li>
                      </ul>
                   </section>
                </li>
                <li class="thing">
+                  <!--
+
+                  What you did, how you did it, why did it matter.
+                  Accomplished X as measured by Y by doing Z.
+                  Include language used next to project.
+
+                  Refactor
+                  Impact
+
+                  -->
                   <header>
                      <h1><a href="https://beam.pro">Beam</a></h1>
                      <address>Seattle, WA</address>
@@ -206,18 +210,24 @@ Include language used next to project.
                      <ul>
                         <li>
                            <p>
-                              Engineered Stream Teams and Stream Hosting social features to facilitate livestreamer/community discovery and interaction.
+                              Refactored legacy authorization middleware to support hybrid role-based/resource-based access control for hapi.js Node endpoints.
                            </p>
                         </li>
                         <li>
                            <p>
-                              Delivered live service improvements and core codebase refactors to enable reliable post-acquisition team growth with zero bugs.
+                              Increased community engagement and retention by engineering social group and stream-sharing features with Angular 1.0 frontend.
+                              <!-- Engineered Stream Teams and Stream Hosting social features to facilitate livestreamer/community discovery and interaction. -->
                            </p>
                         </li>
+                        <!-- <li>
+                           <p>
+                              Delivered live service improvements and core codebase refactors to enable reliable post-acquisition team growth with zero bugs.
+                           </p>
+                        </li> -->
                      </ul>
                   </section>
                </li>
-               <li class="thing">
+               <!-- <li class="thing">
                   <header>
                      <h1>Miscellaneous Startups and Teams</h1>
                      <address class="online">Online</address>
@@ -233,7 +243,7 @@ Include language used next to project.
                         </li>
                      </ul>
                   </section>
-               </li>
+               </li> -->
                <li class="thing">
                   <header>
                      <h1><a href="http://www.riotgames.com/">Riot Games</a></h1>
@@ -245,24 +255,35 @@ Include language used next to project.
                      <ul>
                         <li>
                            <p>
-                              Diagnosed and patched critical <a href="http://na.leagueoflegends.com/en/tag/team-builder">matchmaker</a> bug in first week.
-                              Rebuilt <a href="https://support.riotgames.com/hc/en-us/articles/201752714-LeaverBuster-FAQ">leaver prevention</a> system to improve player experience.
+                              Diagnosed and patched critical <a href="http://na.leagueoflegends.com/en/tag/team-builder">matchmaker</a> bug in first week by binary-searching Java commit history manually to find root cause.
                            </p>
                         </li>
                         <li>
                            <p>
-                              Automated live-service monitoring, extracted microservice from monolithic p4 repo to Git, and taught Git fundamentals.
+                              Substantially reduced match abandonment by
+                              refactoring legacy <a href="https://support.riotgames.com/hc/en-us/articles/201752714-LeaverBuster-FAQ">punishment system</a> to microservice
+                              and overhauling broken design.<br/>
+                              Technologies leveraged include Spring, JMX, Hibernate, Oracle Coherence, Maven, Surefire, JUnit, Lombok, and Mockito.
                            </p>
                         </li>
                         <li>
+                           <p>
+                              Improved service uptime and team productivity by automating microservice health monitoring with Ruby. Led intern hackathon team.
+                               <!-- and extracting microservices from P4 monolith to Git. -->
+                              <!-- Automated microservice monitoring with Ruby, migrated codebase from P4 monolith to Git, taught Git, and led intern hackathon team. -->
+                              <!-- and taught team Git fundamentals. -->
+                              <!-- Automated live-service monitoring, extracted microservice from monolithic p4 repo to Git, and taught Git fundamentals. -->
+                           </p>
+                        </li>
+                        <!-- <li>
                            <p>
                               Led intern hackathon team in building experimental simplified lobby server/client featuring a AI-powered automatic team-selection.
                            </p>
-                        </li>
+                        </li> -->
                      </ul>
                   </section>
                </li>
-               <li class="thing">
+               <!-- <li class="thing">
                   <header>
                      <h1><a href="http://www.azubu.tv/company-profile">Azubu</a></h1>
                      <address>Sherman Oaks, CA</address>
@@ -283,24 +304,58 @@ Include language used next to project.
                         </li>
                      </ul>
                   </section>
-               </li>
+               </li> -->
                <li class="thing">
                   <header>
-                     <h1><a href="http://lol.gamepedia.com/">Leaguepedia</a> / <a href="http://lol.esportspedia.com/">eSportspedia</a></h1>
+                     <h1>Dargon / <a href="http://lol.gamepedia.com/">Leaguepedia</a> / AzubuTV</h1>
                      <address class="online">Online</address>
-                     <time>March 2013 - May 2014</time>
-                     <span class="role">Technical Lead on Internal Project Development</span>
+                     <time>April 2011 - May 2014</time>
+                     <span class="role">Creator / Technical Lead / Software Engineer</span>
                   </header>
                   <section>
                      <ul>
                         <li>
                            <p>
-                              Integrated sponsor logos into game world and built fundraising live-tracking software for <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">Typhoon Haiyan charity relief tournament</a>.
+                              Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> with C#/C++ desktop application and PHP-based backend achieving 300k+ monthly runs.
+                           </p>
+                        </li>
+                        <li style="margin-left: 1.5em;">
+                           <p>
+                              Hacked colorblind support into game and facilitated official release reaching 7,000,000+ monthly colorblind players.
+                           </p>
+                        </li>
+                        <li style="margin-left: 1.5em;">
+                           <p>
+                              Injected .NET CLR into unmanaged process leveraging C++/CLI for interop. Reverse-engineered game structs with IDA and hijacked I/O with Detours.
+                              Rendered overlays with DirectInput, Direct3D, and WinAPI. Wrote most dependencies from scratch (see side-projects).
+                              Leveraged multi-process architecture with low-footprint daemon to support hot-patching and run optimally on low-end computers.
+                           </p>
+                        </li>
+                        <li style="margin-left: 1.5em;">
+                           <p>
+                              Supported <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a>
+                              by embedding sponsor logos into game world and building donation-tracker.
+                              <!-- Integrated sponsor logos into game world and built fundraising live-tracking software for <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">Typhoon Haiyan charity relief tournament</a>. -->
                            </p>
                         </li>
                         <li>
                            <p>
-                              Led development of experimental esports products. Involved in building sales decks and pitching to esports organizations like Azubu.
+                              Led Leaguepedia's internal project development, built sales decks, and helped pitch Leaguepedia's organizational merger with Azubu.
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              Rapidly deployed workarounds to Azubu's critical post-launch scalability issues.
+                              Administered Leaguepedia's MediaWiki deployments.</br>
+
+                              Rebuilt livestream chat UI, developed internal tooling/dashboards,
+                              and embedded game scoreboard under streams.
+
+                              <!-- Embedded scalable live game data integration under
+                               rebuilt livestream chat UI, and developed internal tooling/dashboards. -->
+                              <!-- rapidly delivered scalability workarounds and live game data integration
+                               for <a href="https://web.archive.org/web/20140822040819/http://allstars.azubu.tv/">critical post-launch eSports event</a>. -->
+                              <!-- Rebuilt livestream chat UI, developed internal tooling/dashboards, and taught HTML5 fundamentals to content team. -->
                            </p>
                         </li>
                      </ul>
@@ -309,37 +364,42 @@ Include language used next to project.
             </ul>
          </section>
          <section class="resume-block">
-            <h1>Leadership and Projects</h1>
+            <h1>Additional Experience</h1>
             <ul>
                <li class="thing">
                   <header>
                      <h1>Side-Projects (See GitHub)</h1>
-                     <time>April 2011 - Present</time>
+                     <time>Early 2000's - Present</time>
                   </header>
                   <section>
                      <ul>
                         <li>
                            <p>
-                              Hacked colorblind support into League of Legends, facilitated official feature release now reaching 7,000,000+ colorblind players/month.
+                              Building 3D real-time strategy game in C# to explore AI, computational geometry, and robotics (search and motion planning).
                            </p>
                         </li>
                         <li>
                            <p>
-                              Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> which kickstarted numerous community content creators and reached 300k+ monthly runs.
+                              Automated <a href="http://www.itzwarty.com/character-detection-in-league-of-legends-artwork/">Character Detection in Hand-Drawn Game Artwork</a> leveraging AForge for computer vision. Shipped with Dargon
+
+                              alongside my own
+                              <a href="https://github.com/the-dargon-project/commons">lock-free primitive</a>,
+                              <a href="https://github.com/the-dargon-project/dargon.nest">orchestration, deployment</a>,
+                              <a href="https://github.com/the-dargon-project/NMockito">mocking</a>, <a href="https://github.com/the-dargon-project/Dargon.Management-Interface">JMX-like</a>, <a href="https://github.com/miyu/Constructors">Lombok-like</a>, <a href="https://github.com/the-dargon-project/ryu">IoC</a>,
+                              <a href="https://github.com/the-dargon-project/vox">serialization</a>, and
+                              <a href="https://github.com/the-dargon-project/courier">networking</a>
+                              C# frameworks.
+                           </p>
+                           <!-- <a href="https://github.com/the-dargon-project/Dargon.Hydar">In-Memory Data Grid</a>. -->
+                        </li>
+                        <li>
+                           <p>
+                              Developed <a href="https://github.com/miyu/campfirenet">Bluetooth Mesh Network framework</a> for undergraduate capstone, leveraging Xamarin for C# mobile development.
                            </p>
                         </li>
                         <li>
-                           <h2>And More:</h2>
                            <p>
-                              <a href="https://github.com/miyu/derp">Optimal Pathfinding on Procedural Surfaces</a>,
-                              <a href="https://github.com/the-dargon-project/commons">Lock-Free Channels/Async Primitives</a>,
-                              <a href="http://www.itzwarty.com/character-detection-in-league-of-legends-artwork/">Character Detection in Hand-Drawn Art</a>,
-                              <a href="https://github.com/the-dargon-project/dargon.nest">Patching/Deployment</a>,
-                              <a href="https://github.com/the-dargon-project/NMockito">Mockito</a>/<a href="https://github.com/the-dargon-project/Dargon.Management-Interface">JMX</a>/<a href="https://github.com/miyu/Constructors">Lombok</a>/<a href="https://github.com/the-dargon-project/ryu">IoC container</a> for .NET,
-			      <!--<a href="https://github.com/the-dargon-project/vox">Serialization</a>,-->
-			      <!--<a href="https://github.com/the-dargon-project/courier">Networking</a>,-->
-			      <a href="https://github.com/miyu/campfirenet">Bluetooth Mesh Network</a>, and
-                              <a href="https://github.com/the-dargon-project/Dargon.Hydar">In-Memory Data Grid</a>.
+                              Built a JavaScript Game Boy Z80-like CPU emulator back in middle school. Learned ActionScript 2.0 with C# interop to build games and tools.
                            </p>
                         </li>
                      </ul>
@@ -360,15 +420,16 @@ Include language used next to project.
                      <time>September 2015 - February 2017</time>
                      <span class="role">Captain / Vice President of Computer Engineering</span>
                   </header>
-                  <section>
+                  <!-- <section>
                      <ul>
                         <li>
                            <p>
-                              Led pivot to autonomous robotics. Reworked hardware/software stack, taught software engineering fundamentals, project management.
+                              Led pivot to autonomous robotics.
+                              Reworked hardware/software stack, taught software engineering fundamentals, project management.
                            </p>
                         </li>
                      </ul>
-                  </section>
+                  </section> -->
                </li>
                <!-- <li class="thing">
                   <header>
@@ -389,7 +450,7 @@ Include language used next to project.
                <!-- </li> -->
             </ul>
          </section>
-         <section class="resume-block">
+         <!-- <section class="resume-block">
             <h1>Technical Skills</h1>
             <ul>
                <li class="thing">
@@ -405,8 +466,7 @@ Include language used next to project.
                         <li>
                            <h2>Technologies:</h2>
                            <p>
-                              <!-- All major platforms. -->
-
+                              All major platforms.
                               Microsoft Stack (WinAPI, DirectX, Xamarin), Node, Docker, AWS, Terraform,
                               OpenCV, WinDbg, IDA, Angular, and React.
                            </p>
@@ -415,7 +475,7 @@ Include language used next to project.
                   </section>
                </li>
             </ul>
-         </section>
+         </section> -->
       </div>
       <div class="page" id="debug_page" style="display: none;">
             <script>
