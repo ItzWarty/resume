@@ -63,7 +63,7 @@ body {
   }
 }
 .resume-block {
-  font-size: 125% !important;
+  font-size: 110% !important;
 }
 .resume-block:last-child {
   margin-bottom: -0.2em;
@@ -79,7 +79,7 @@ body {
   font-size: 80%;
 }
 .resume-block > ul .thing:not(:last-of-type) {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
 }
 .resume-block > ul .thing > header {
   display: flex;
