@@ -174,18 +174,24 @@ body {
               span { white-space: nowrap; }
            }
 
-           > ul {
+           ul {
              display: block;
 
-             > li {
-                display: flex;
-
+             li {
                 &:before {
                    display: block;
+                   float: left;
                    width: 0px;
                    margin-left: -1.0em;
                    padding-right: 1.0em;
-                   content: '\25AA'
+                   content: '\25AA';
+                }
+
+                &.star {
+                   &:before {
+                      content: '\272d' !important;
+                      margin-left: -1.22em;
+                   }
                 }
 
                 > h2 {
@@ -200,7 +206,16 @@ body {
                    }
                 }
                 > p {
-                   flex: 1000;
+                   display: inline-block;
+                }
+
+                > ul {
+                   margin-left: 1.5em;
+                   li {
+                      &:before {
+                        content: '-';
+                     }
+                   }
                 }
              }
            }
