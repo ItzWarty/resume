@@ -22,8 +22,10 @@ Impact
             <div class="qr-code"></div>
             <div class="contents">
                <h1>Michael Yu</h1>
-               <nav>
-                  <a href="mailto:miyu@dargon.io">miyu@dargon.io</a>
+               <nav style="font-size: 50%;">
+                  B.S. / M.S. in Computer Engineering from UW Seattle. Has a husky.<br/>
+                  Coder since the age of 6. Full-stack, likes Kernel/Graphics/Backend.<br/>
+                  <a href="mailto:miyu@dargon.io">miyu@dargon.io</a>|
                   <!-- <a href="https://miyu.gg">miyu.gg</a> -->
                   <!-- <a href="http://lnked.in/miyu">lnked.in/miyu</a> -->
                   <a href="https://github.com/miyu">github.com/miyu</a>
@@ -31,7 +33,7 @@ Impact
                </nav>
             </div>
          </header>
-         <section class="resume-block">
+         <!-- <section class="resume-block">
             <h1>Education</h1>
             <ul>
                <li class="thing">
@@ -52,10 +54,33 @@ Impact
                   </section>
                </li>
             </ul>
-         </section>
+         </section> -->
          <section class="resume-block">
             <h1>Work Experience</h1>
             <ul>
+               <li class="thing">
+                  <header>
+                     <h1><a href="https://www.mixer.com/">Facebook</a></h1>
+                     <address>Menlo Park, CA</address>
+                     <time>Aug. 2018 &ndash; Present</time>
+                     <span class="role">Full-Stack Engineer in Facebook Reality Labs R&D</span>
+                  </header>
+                  <section>
+                     <ul>
+                        <li>
+                           <p>Graphics maintainer and gameplay engineer for a Unity-based VR shooter.</p>
+                           <ul>
+                              <li>Integrated in-house PBGI/subdivision renderer and built an efficient compositor for 2D animated UIs on mobile VR hardware.</li>
+                              <li>Improved designer/artist asset pipeline and perf optimization workflows, "2xing productivity" and achieving perf goals.</li>
+                              <li>Refactored game systems to support server-authoritative networking with client-side prediction and rollback.</li>
+                              <li>Designed gameplay core arch, targeting reticles, HUD, environment/gameplay indicators, and prototype ability system.</li>
+                           </ul>
+                        </li>
+                        <li>Ended months of codebase instability by establishing team building/on-call procedures and spearheading code cleanup efforts.</li>
+                        <li>Maintained Facebook Horizon's telemetry ingest and error pipeline, hosted a scrappy Terraform/Chef/Postgres-based build cluster for driving down test flakiness, and implemented the shipping version of Horizon's 3D modelling UI panels.</li>
+                     </ul>
+                  </section>
+               </li>
                <li class="thing">
                   <header>
                      <h1><a href="https://www.mixer.com/">Beam / Microsoft</a></h1>
@@ -68,7 +93,7 @@ Impact
                         <li>
                            <!-- , ending months of site-wide regressions -->
                            <!-- and improving maintainability and service stability efforts for -->
-                           <p>Led startup engineering culture, ending months of site-wide regressions and maturing team for MS acquisition.
+                           <p>Led stability/TDD initiative of livestreaming startup, ending months of site-wide outages and maturing team for MS acquisition.
                               <!-- , migrating all users to Microsoft Accounts and shipping to 300k day 1 CCU with 0 bugs -->
                               <!-- Migrated entire backend from fragile legacy auth to Microsoft Accounts, shipping to 300k day 1 CCU with 0 bugs. -->
                               <!-- and enabling Mixer's native-integration launches to Windows 10 Creator's Update and Xbox One. -->
@@ -80,15 +105,15 @@ Impact
                            </p>
                         </li>
                         <li class="">
-                           <p>Migrated all users to Microsoft Accounts with 0 bugs and 300k Day 1 CCU spanning Win10 / Xbox / Mobile / Web.</p>
+                          <p>Maintained identity/ACL flows from brittle and frequently-regressing to exhaustively documented and tested w/ 100% coverage.</p>
                            <ul>
-                              <li>Rewrote brittle, deeply coupled, and frequently-regressing auth middleware with TDD and exhaustive test coverage.</li>
-                              <li>Bridged backend w/ Xbox Live by implementing RPC library w/ ECDSA P-256 signing in TypeScript w/ 100% coverage.</li>
-                              <li>Built flows for linking existing accounts to Microsoft SSO & authenticating Xbox devices as existing users.</li>
+                              <li>Migrated all users to Microsoft SSO with 0 bugs and 300k Day 1 CCU spanning Win10 / Xbox / Mobile / Web.</li>
+                              <!-- <li>Bridged backend w/ Xbox Live by implementing RPC library w/ ECDSA P-256 signing in TypeScript w/ 100% coverage.</li> -->
+                              <!-- <li>Built flows for linking existing accounts to Microsoft SSO & authenticating Xbox devices as existing users.</li> -->
                            </ul>
                         </li>
                         <li>
-                           <p>Contributions spanned distributed chat w/ Redis, localization, <span>billing w/ Stripe/Braintree,</span> containerizing stack w/ Docker, <span>hybrid role-based/resource-based access control,</span> <span>video ingest/distribution/player w/ Go,</span> evangelizing test culture, customer service backend integrations, account management, analytics dashboards w/ Grafana/InfluxDB, and geo-blocking.</p>
+                           <p>Contributions spanned distributed chat/notifications w/ Redis, localization, <span>billing w/ Stripe & Braintree,</span> containerizing stack w/ Docker, <span>hybrid role-based/resource-based access control,</span> <span>video ingest/distribution/player w/ Go,</span> evangelizing test culture, customer service backend integrations, account management, analytics dashboards w/ Grafana/InfluxDB, and geo-blocking.</p>
                         </li>
                         <!-- <li> -->
                            <!-- <p> -->
@@ -195,7 +220,7 @@ Impact
                         <!-- Developed feature extractors for ML-based malware classification and  -->
                         <li>
                            <p>
-                              Built TDD framework for virtualization-based kernel-user software testing w/ C/C#/VMWare.
+                              Built feature extractors for ML malware detector and TDD framework for kernel-user software testing w/ C/C#/VMWare.
                            </p>
                         </li>
                      </ul>
@@ -223,14 +248,14 @@ Impact
                      <h1><a href="http://www.riotgames.com/">Riot Games</a></h1>
                      <address>Santa Monica, CA</address>
                      <time>May 2014 &ndash; Aug. 2014</time>
-                     <span class="role">League of Legends Backend Engineer (Intern)</span>
+                     <span class="role">League of Legends Matchmaker and Abuse Prevention (Intern)</span>
                   </header>
                   <section>
                     <ul>
-                      <li>Built linearly-scalable core services (Abuse Prevention, Matchmaker) scaling to 100m+ MAU w/ Java/MySQL/Coherence.</li>
-                      <li>Refactored brittle, high-risk, and monolithic legacy code to maintainable and fault-tolerant microservices w/ TDD.</li>
-                      <li>Automated system health monitoring and error report generation with Ruby/ERB.</li>
-                      <li>Led 10-member hackathon team building AI-powered team drafting and game client/server mock w/ Node.js.</li>
+                      <li>Refactored brittle legacy monolith into maintainable and fault-tolerant microservice linearly-scaled at 100m+ MAU.</li>
+                      <!-- <li>Refactored brittle, high-risk, and monolithic legacy code to maintainable and fault-tolerant microservices w/ TDD.</li> -->
+                      <li>Automated system health monitoring and error report generation with Ruby/Java/MySQL/Coherence and TDD.</li>
+                      <!-- <li>Led 10-member hackathon team building AI-powered team drafting and game client/server mock w/ Node.js.</li> -->
                     </ul>
 
                     <!--
@@ -289,9 +314,9 @@ Impact
                               <!-- Engineered internal knowledge API and frontend to consolidate company-wide tooling (e.g. org chart queries, RFCs, code dependencies). -->
                            </p>
                         </li>
-                        <li>
+                        <!-- <li>
                            <p>
-                              Automated org-wide metrics visualization spanning game engine, support, and HR leveraging JavaScript, Python, and C++.
+                              Automated org-wide metrics visualization spanning game engine, support, and HR leveraging JavaScript, Python, and C++. -->
                               <!-- Topics included automated helpdesk KPIs, game engine determinism, hiring pipeline optimization, and organizational growth. -->
                               <!-- Delivered insights spanning -->
                                 <!-- tooling to inform live operations, infosec, recruiting, engineering, and leadership decision-making.</br> -->
@@ -300,8 +325,8 @@ Impact
                               <!-- to inform -->
                                 <!-- live operations, infosec, recruiting, engineering, and leadership decision-making -->
                               <!-- organizational decisions. -->
-                           </p>
-                        </li>
+                           <!-- </p>
+                        </li> -->
                         <!-- <li> -->
                            <!-- RFC library, internal knowledge graph, and reporting tools, facilitate cross-team collaboration and knowledge discovery. -->
                            <!-- behind League of Legends' 100m+ monthly active players worldwide. -->
@@ -417,6 +442,9 @@ Impact
                   <section>
                      <ul>
                         <li>
+                           <p>Building an RTS engine with poly clipping, triangulation, visibility computation, flocking, pathfinding, C#-HLSL transpiler.</p>
+                        </li>
+                        <li>
                            <p>
                               Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-on Installer</a> with C#/C++ desktop app and PHP server achieving 300k runs/mo.
                               <!-- Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> with C#/C++ desktop application and PHP-based backend achieving 300k+ monthly runs. -->
@@ -437,11 +465,11 @@ Impact
                               <!-- Rendered overlays with DirectInput, Direct3D, and WinAPI. Wrote most dependencies from scratch (see side-projects). -->
                            <!-- </p>
                         </li> -->
-                        <li style='margin-left: 1.5em;'>
+                        <!-- <li style='margin-left: 1.5em;'>
                            <p>
                               Automated <a href="http://www.itzwarty.com/character-detection-in-league-of-legends-artwork/">Character Detection in Hand-Drawn Game Artwork</a> with computer vision.
                            </p>
-                        </li>
+                        </li> -->
                            <!-- Shipped with LoL project
 
                            alongside own
@@ -456,6 +484,9 @@ Impact
                            <p>
                               Developed <a href="https://github.com/miyu/campfirenet">Bluetooth Mesh Network framework</a> for undergraduate capstone, leveraging Xamarin for Android development.
                            </p>
+                        </li>
+                        <li>
+                           <p>Led software groups of high school and college robotics teams. Elected team-wide captain for both leading XFN/ops efforts.</p>
                         </li>
                         <!-- <li>
                            <p>
@@ -478,13 +509,13 @@ Impact
                      <span class="role">Teaching Assistant (Security) and Tutor</span>
                   </header>
                </li> -->
-               <li class="thing">
+               <!-- <li class="thing">
                   <header>
                      <h1>UW Underwater Robotics</h1>
                      <address>Seattle, WA</address>
                      <time>Sept. 2015 &ndash; Feb. 2017</time>
                      <span class="role">Captain / Vice President of Computer Engineering</span>
-                  </header>
+                  </header> -->
                   <!-- <section>
                      <ul>
                         <li>
@@ -495,7 +526,7 @@ Impact
                         </li>
                      </ul>
                   </section> -->
-               </li>
+               <!-- </li> -->
                <!-- <li class="thing">
                   <header>
                      <h1>Harker Robotics</h1>
