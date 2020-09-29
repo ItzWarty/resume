@@ -23,8 +23,8 @@ Impact
             <div class="contents">
                <h1>Michael Yu</h1>
                <nav style="font-size: 50%;">
-                  B.S. / M.S. in Computer Engineering from UW Seattle. Has a husky.<br/>
-                  Coder since the age of 6. Full-stack, likes Kernel/Graphics/Backend.<br/>
+                  B.S. / M.S. in Computer Engineering from UW Seattle<br/>
+                  <!-- Full-stack engineer & coder since the age of 6!<br/> -->
                   <a href="mailto:miyu@dargon.io">miyu@dargon.io</a>|
                   <!-- <a href="https://miyu.gg">miyu.gg</a> -->
                   <!-- <a href="http://lnked.in/miyu">lnked.in/miyu</a> -->
@@ -56,28 +56,29 @@ Impact
             </ul>
          </section> -->
          <section class="resume-block">
-            <h1>Work Experience</h1>
+            <h1>Technical Experience</h1>
             <ul>
                <li class="thing">
                   <header>
                      <h1><a href="https://www.mixer.com/">Facebook</a></h1>
                      <address>Menlo Park, CA</address>
                      <time>Aug. 2018 &ndash; Present</time>
-                     <span class="role">Full-Stack Engineer in Facebook Reality Labs R&D</span>
+                     <span class="role">Full-Stack Engineer (VR Product R&D, Graphics, Backend, and Infra)</span>
                   </header>
                   <section>
                      <ul>
                         <li>
-                           <p>Graphics maintainer and gameplay engineer for a Unity-based VR shooter.</p>
+                           <p>Graphics lead & core engineer for VR shooter from pre-production to post-production.</p>
                            <ul>
-                              <li>Integrated in-house PBGI/subdivision renderer and built an efficient compositor for 2D animated UIs on mobile VR hardware.</li>
-                              <li>Improved designer/artist asset pipeline and perf optimization workflows, "2xing productivity" and achieving perf goals.</li>
-                              <li>Refactored game systems to support server-authoritative networking with client-side prediction and rollback.</li>
-                              <li>Designed gameplay core arch, targeting reticles, HUD, environment/gameplay indicators, and prototype ability system.</li>
+                              <li>Integrated in-house realtime PBGI/subdivision renderer. Built compositor for efficiently animating UIs on mobile hardware.</li>
+                              <li>Slashed Unity code-change iteration times >26x (7m+ to 16s) by building a custom Android Package (APK) patcher/deployer.</li>
+                              <li>Reworked content authoring workflows to scale art, design, and engineering teams, improving "productivity by at least 2x".</li>
+                              <li>Optimizations to hit device CPU/GPU/MEM/IO perf goals. Prototyped gameplay: targeting reticles, HUD, indicators, & abilities.</li>
+                              <li>Led core systems refactor to support server-authoritative networking with client-side prediction, interpolation, and rollback.</li>
+                              <li>Established agile & team-building efforts, spearheading cleanup/tooling initiatives that ended months of project instability.</li>
                            </ul>
                         </li>
-                        <li>Ended months of codebase instability by establishing team building/on-call procedures and spearheading code cleanup efforts.</li>
-                        <li>Maintained Facebook Horizon's telemetry ingest and error pipeline, hosted a scrappy Terraform/Chef/Postgres-based build cluster for driving down test flakiness, and implemented the shipping version of Horizon's 3D modelling UI panels.</li>
+                        <li>Mentored mid-level engineer to senior technical bar. Maintained org's telemetry ingest & error pipeline, drove a key data loss recovery effort, rigged a scrappy build cluster (Terraform/Chef/Postgres) to drive down flakey tests, built 3D modelling UI panels w/ React Native & Redux/Saga, prototyped a client-server testing framework and IoC container for deterministic application bring-up.</li>
                      </ul>
                   </section>
                </li>
@@ -93,7 +94,7 @@ Impact
                         <li>
                            <!-- , ending months of site-wide regressions -->
                            <!-- and improving maintainability and service stability efforts for -->
-                           <p>Led stability/TDD initiative of livestreaming startup, ending months of site-wide outages and maturing team for MS acquisition.
+                           <p>Led stability initiative of livestreaming startup, ending months of site-wide outages and maturing team for MS acquisition.
                               <!-- , migrating all users to Microsoft Accounts and shipping to 300k day 1 CCU with 0 bugs -->
                               <!-- Migrated entire backend from fragile legacy auth to Microsoft Accounts, shipping to 300k day 1 CCU with 0 bugs. -->
                               <!-- and enabling Mixer's native-integration launches to Windows 10 Creator's Update and Xbox One. -->
@@ -139,6 +140,82 @@ Impact
                               region/third-party blocking, and service stability analytics. -->
                            <!-- </p>
                         </li> -->
+                     </ul>
+                  </section>
+               </li>
+               <!-- <li class="thing">
+                  <header>
+                     <h1><a href="http://www.azubu.tv/company-profile">Azubu</a></h1>
+                     <address>Sherman Oaks, CA</address>
+                     <time>March 2014 - May 2014</time>
+                     <span class="role">Full-Stack Software Engineer on <a href="http://www.azubu.tv/">AzubuTV</a></span>
+                  </header>
+                  <section>
+                     <ul>
+                        <li>
+                           <p>
+                              Rapidly delivered scalability workarounds and live game data integration for <a href="https://web.archive.org/web/20140822040819/http://allstars.azubu.tv/">critical post-launch eSports event</a>.
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              Rebuilt livestream chat UI, developed internal tooling/dashboards, and taught HTML5 fundamentals to content team.
+                           </p>
+                        </li>
+                     </ul>
+                  </section>
+               </li>
+               -->
+               <li class="thing">
+                  <header>
+                     <h1>Dargon  / <a href="http://lol.gamepedia.com/">Leaguepedia</a> / AzubuTV</h1>
+                     <address class="online">Online</address>
+                     <time>April 2011 - May 2014</time>
+                     <span class="role">Creator / Technical Lead</span>
+                  </header>
+                  <section>
+                     <ul>
+                        <li>
+                           <p>
+                              Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool</a> to hundreds of thousands of players & content creators.<br/>
+                              Reverse-engineered network protocols, patcher, and asset formats.
+                              Wrote frameworks for process injection (I/O hijack), xplat networked multiprocess arch, & app deployment/monitoring.
+                              Leveraged Dokan/WPF/WinForms/C++/C#/Detours/DX9/IDA & LAMP.
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              Hacked colorblind support into LoL & facilitated game's official implementation, now reaching 7m+ monthly colorblind players.
+                           </p>
+                        </li>
+                        <!-- <li style="margin-left: 1.5em;">
+                           <p>
+                              Supported <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a>
+                              by embedding sponsor logos into game world and building donation-tracker. -->
+                              <!-- Integrated sponsor logos into game world and built fundraising live-tracking software for <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">Typhoon Haiyan charity relief tournament</a>. -->
+                           <!-- </p>
+                        </li> -->
+                        <li>
+                           <p>
+                              Deployed LoL's largest community wiki, led project prototypes and built sales decks, culminating in multiple successful pitches, team transition to AzubuTV, & a
+                              <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a> with custom dynamic stream overlays & modded in-game integrations.
+                           </p>
+                        </li>
+                        <!-- <li>
+                           <p> -->
+                              <!-- Rapidly deployed workarounds to Azubu's critical post-launch scalability issues.
+                              Administered Leaguepedia's MediaWiki deployments.</br> -->
+
+                              <!-- Led Leaguepedia's internal project development. Rebuilt Azubu's livestream chat UI, developed internal tooling/dashboards,
+                              and embedded game scoreboard under streams. -->
+
+                              <!-- Embedded scalable live game data integration under
+                               rebuilt livestream chat UI, and developed internal tooling/dashboards. -->
+                              <!-- rapidly delivered scalability workarounds and live game data integration
+                               for <a href="https://web.archive.org/web/20140822040819/http://allstars.azubu.tv/">critical post-launch eSports event</a>. -->
+                              <!-- Rebuilt livestream chat UI, developed internal tooling/dashboards, and taught HTML5 fundamentals to content team. -->
+                           <!-- </p> -->
+                        <!-- </li> -->
                      </ul>
                   </section>
                </li>
@@ -208,7 +285,8 @@ Impact
                      <h1><a href="https://www.CrowdStrike.com/">CrowdStrike</a></h1>
                      <address>Seattle, WA</address>
                      <time>June 2016 &ndash; Sept. 2016</time>
-                     <span class="role">Kernel Engineer (Intern) on Antivirus</span>
+                     <!-- <time>Summer 2016</time> -->
+                     <span class="role">Kernel Engineer on Antivirus (Intern)</span>
                   </header>
                   <section>
                      <ul>
@@ -347,114 +425,32 @@ Impact
                      </ul>
                   </section>
                </li>
-               <!-- <li class="thing">
-                  <header>
-                     <h1><a href="http://www.azubu.tv/company-profile">Azubu</a></h1>
-                     <address>Sherman Oaks, CA</address>
-                     <time>March 2014 - May 2014</time>
-                     <span class="role">Full-Stack Software Engineer on <a href="http://www.azubu.tv/">AzubuTV</a></span>
-                  </header>
-                  <section>
-                     <ul>
-                        <li>
-                           <p>
-                              Rapidly delivered scalability workarounds and live game data integration for <a href="https://web.archive.org/web/20140822040819/http://allstars.azubu.tv/">critical post-launch eSports event</a>.
-                           </p>
-                        </li>
-                        <li>
-                           <p>
-                              Rebuilt livestream chat UI, developed internal tooling/dashboards, and taught HTML5 fundamentals to content team.
-                           </p>
-                        </li>
-                     </ul>
-                  </section>
-               </li> -->
-               <!-- <li class="thing">
-                  <header> -->
-                     <!-- <h1>Dargon  / <a href="http://lol.gamepedia.com/">Leaguepedia</a> / AzubuTV --><!--</h1> -->
-                     <!-- <address class="online">Online</address>
-                     <time>April 2011 - May 2014</time>
-                     <span class="role">Creator  Technical Lead / Software Engineer</span> -->
-                  <!-- </header>
-                  <section>
-                     <ul>
-                        <li>
-                           <p>
-                              Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> with C#/C++ desktop app and PHP server achieving 300k monthly runs. -->
-                              <!-- Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> with C#/C++ desktop application and PHP-based backend achieving 300k+ monthly runs. -->
-                           <!-- </p>
-                        </li>
-                        <li>
-                           <p>
-                              Hacked colorblind support into LoL and facilitated official release reaching 7,000,000+ monthly colorblind players.
-                           </p>
-                        </li>
-                        <li>
-                           <p>
-                              Leveraged multi-process arch with low-footprint daemon supportting hot-patching and low-end computers.</br>
-                              Injected CLR into unmanaged process leveraging C++/CLI for interop and Detours for hijacking game I/O. -->
-
-                              <!-- Leveraged multi-process architecture with low-footprint daemon to support hot-patching and run on low-end computers.</br>
-                              Injected .NET CLR into unmanaged process leveraging C++/CLI for interop, IDA for reverse engineering, and Detours to hijack game I/O. -->
-                              <!-- Rendered overlays with DirectInput, Direct3D, and WinAPI. Wrote most dependencies from scratch (see side-projects). -->
-                           <!-- </p>
-                        </li> -->
-                        <!-- <li style="margin-left: 1.5em;">
-                           <p>
-                              Supported <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a>
-                              by embedding sponsor logos into game world and building donation-tracker. -->
-                              <!-- Integrated sponsor logos into game world and built fundraising live-tracking software for <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">Typhoon Haiyan charity relief tournament</a>. -->
-                           <!-- </p>
-                        </li> -->
-                        <!-- <li>
-                           <p>
-                              Led Leaguepedia's internal project development, built sales decks, and helped pitch Leaguepedia's organizational merger with Azubu.
-                           </p>
-                        </li> -->
-                        <!-- <li>
-                           <p> -->
-                              <!-- Rapidly deployed workarounds to Azubu's critical post-launch scalability issues.
-                              Administered Leaguepedia's MediaWiki deployments.</br> -->
-
-                              <!-- Led Leaguepedia's internal project development. Rebuilt Azubu's livestream chat UI, developed internal tooling/dashboards,
-                              and embedded game scoreboard under streams. -->
-
-                              <!-- Embedded scalable live game data integration under
-                               rebuilt livestream chat UI, and developed internal tooling/dashboards. -->
-                              <!-- rapidly delivered scalability workarounds and live game data integration
-                               for <a href="https://web.archive.org/web/20140822040819/http://allstars.azubu.tv/">critical post-launch eSports event</a>. -->
-                              <!-- Rebuilt livestream chat UI, developed internal tooling/dashboards, and taught HTML5 fundamentals to content team. -->
-                           <!-- </p>
-                        </li> -->
-                     </ul>
-                  </section>
-               </li>
             </ul>
          </section>
          <section class="resume-block">
-            <h1>Additional Experience</h1>
+            <h1>Side-Projects</h1>
             <ul>
                <li class="thing">
-                  <header>
+                  <!-- <header>
                      <h1>Side-Projects (<a href="https://github.com/miyu">See More on GitHub</a>)</h1>
                      <time>Early 2000's &ndash; Present</time>
-                  </header>
+                  </header> -->
                   <section>
                      <ul>
                         <li>
-                           <p>Building an RTS engine with poly clipping, triangulation, visibility computation, flocking, pathfinding, C#-HLSL transpiler.</p>
+                           <p>Building an RTS engine with poly clipping, triangulation, visibility computation, flocking, motion planning, C#-HLSL transpiler.</p>
                         </li>
-                        <li>
+                        <!-- <li>
                            <p>
-                              Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-on Installer</a> with C#/C++ desktop app and PHP server achieving 300k runs/mo.
+                              Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-on Installer</a> with C#/C++ desktop app and PHP server achieving 300k runs/mo. -->
                               <!-- Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-in Installer</a> with C#/C++ desktop application and PHP-based backend achieving 300k+ monthly runs. -->
-                           </p>
+                           <!-- </p>
                         </li>
                         <li style='margin-left: 1.5em;'>
                            <p>
                               Hacked colorblind support into game and aided official release reaching 7,000,000+ affected players/mo.
                            </p>
-                        </li>
+                        </li> -->
                         <!-- <li style='margin-left: 1.5em;'>
                            <p> -->
                               <!-- Injected CLR into unmanaged process leveraging C++/CLI for interop and Detours for hijacking game I/O. -->
@@ -493,11 +489,11 @@ Impact
                               Building 3D real-time strategy game in C# to explore AI, computational geometry, and robotics (search and motion planning).
                            </p>
                         </li> -->
-                        <!-- <li>
+                        <li>
                            <p>
-                              Built a JavaScript Game Boy Z80-like CPU emulator back in middle school. Learned ActionScript 2.0 with C# interop to build games and tools.
+                              Coder since the age of 6! Built a JavaScript Game Boy CPU emulator back in middle school & built games/tools with AS2.0 & C#.
                            </p>
-                        </li> -->
+                        </li>
                      </ul>
                   </section>
                </li>
@@ -546,7 +542,7 @@ Impact
                <!-- </li> -->
             </ul>
          </section>
-         <section class="resume-block">
+         <!-- <section class="resume-block">
             <h1>Technical Skills</h1>
             <ul>
                <li class="thing">
@@ -563,6 +559,7 @@ Impact
                            <h2>Technologies:</h2>
                            <p>
                               <!-- All major platforms. -->
+                              <!--
                               Windows API, DirectX, Xamarin, Node, Docker, AWS, Terraform,
                               OpenCV, WinDbg, IDA, Angular, and React.
                            </p>
@@ -571,7 +568,7 @@ Impact
                   </section>
                </li>
             </ul>
-         </section>
+         </section> -->
       </div>
       <div class="page" id="debug_page" style="display: none;">
             <script>
