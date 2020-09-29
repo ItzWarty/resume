@@ -22,10 +22,10 @@ Impact
             <div class="qr-code"></div>
             <div class="contents">
                <h1>Michael Yu</h1>
-               <nav style="font-size: 50%;">
+               <nav>
                   B.S. / M.S. in Computer Engineering from UW Seattle<br/>
                   <!-- Full-stack engineer & coder since the age of 6!<br/> -->
-                  <a href="mailto:miyu@dargon.io">miyu@dargon.io</a>|
+                  <a href="mailto:miyu@dargon.io">miyu@dargon.io</a>
                   <!-- <a href="https://miyu.gg">miyu.gg</a> -->
                   <!-- <a href="http://lnked.in/miyu">lnked.in/miyu</a> -->
                   <a href="https://github.com/miyu">github.com/miyu</a>
@@ -33,6 +33,16 @@ Impact
                </nav>
             </div>
          </header>
+         <!-- <section class="resume-block">
+            <h1>Summary</h1>
+            <ul>
+               <li class="thing">
+                  <section>
+                     Full-stack engineer at Facebook (previously Microsoft) with 7+ YOE.
+                  </section>
+               </li>
+            </ul>
+         </section> -->
          <!-- <section class="resume-block">
             <h1>Education</h1>
             <ul>
@@ -56,14 +66,14 @@ Impact
             </ul>
          </section> -->
          <section class="resume-block">
-            <h1>Technical Experience</h1>
+            <h1>Work Experience</h1>
             <ul>
                <li class="thing">
                   <header>
                      <h1><a href="https://www.mixer.com/">Facebook</a></h1>
+                     <span class="role">Full-Stack Engineer (VR Product R&D, Graphics, and Infra)</span>
                      <address>Menlo Park, CA</address>
                      <time>Aug. 2018 &ndash; Present</time>
-                     <span class="role">Full-Stack Engineer (VR Product R&D, Graphics, Backend, and Infra)</span>
                   </header>
                   <section>
                      <ul>
@@ -73,7 +83,7 @@ Impact
                               <li>
                                  Integrated in-house realtime PBGI/subdivision renderer.
                                  Designed compositor for efficiently animating UIs on QC Adreno 540,
-                                 applying motion-sickness-reduction research, building scriptable SDF/atlasing tools,
+                                 applying motion-sickness-reduction UX research, building scriptable SDF/atlasing tools,
                                  and consuming &lt;1% of prior CPU load.
                               </li>
                               <li>
@@ -86,7 +96,6 @@ Impact
                                  matured game prototype for production, ended months of instability & rewrites,
                                  and enabled server-authoritative networking with client-side prediction, interpolation, and rollback.
                               </li>
-                              <li>Slashed minimum code iteration times >26x (7m+ to 16s) by building a custom Android Package (APK) patcher/deployer.</li>
                               <li>
                                  Implemented outlines, CSG, mesh slicer for overdraw reduction, paletting workflows, render orderer, and numerous VFX.
                                  Prototyped game's targeting reticles, HUD, indicators, & abilities. Explored network replays & cheat-prevention tech.
@@ -94,7 +103,7 @@ Impact
                            </ul>
                         </li>
                         <li>
-                           Org subject matter expert for C#/.NET/mono & team SME for graphics.
+                           Pillar SME for C#/.NET/mono & team SME for graphics/networking.
                            Mentored mid-level engineer to senior technical bar.
                         </li>
                         <li>
@@ -103,18 +112,20 @@ Impact
                            drove key data loss recovery effort,
                            <br/>
                            rigged a scrappy build cluster (Terraform/Chef/PostgreSQL) to drive down flakey tests,
-                           built 3D modelling UI panels w/ React Native & Redux/Saga,
-                           prototyped a client-server testing framework and IoC container for deterministic application bring-up.
+                           and built 3D modelling UI w/ React Native.
+                           <!-- & Redux/Saga. -->
+                           <!-- prototyped a client-server testing framework and IoC container for deterministic application bring-up. -->
                         </li>
+                        <li>Slashed code iteration times >26x (7m+ to 16s) by building a custom Android Package (APK) patcher/deployer.</li>
                      </ul>
                   </section>
                </li>
                <li class="thing">
                   <header>
                      <h1><a href="https://www.mixer.com/">Beam / Microsoft</a></h1>
+                     <span class="role">Full-Stack Engineer (Contractor, Startup & Post-Acquisition)</span>
                      <address>Redmond, WA</address>
                      <time>Feb. 2016 &ndash; June 2017</time>
-                     <span class="role">Full-Stack Engineer (Contractor, Startup & Post-Acquisition)</span>
                   </header>
                   <section>
                      <ul>
@@ -196,25 +207,25 @@ Impact
                <li class="thing">
                   <header>
                      <h1>Dargon  / <a href="http://lol.gamepedia.com/">Leaguepedia</a> / AzubuTV</h1>
-                     <address class="online">Online</address>
-                     <time>April 2011 - May 2014</time>
                      <span class="role">Creator / Technical Lead</span>
+                     <address class="online">Remote / Los Angeles, CA</address>
+                     <time>April 2011 - May 2014</time>
                   </header>
                   <section>
                      <ul>
                         <li>
                            <p>
-                              Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool</a> to hundreds of thousands of players & content creators.<br/>
-                              Reverse-engineered network protocols, patcher, and asset formats.
-                              Wrote frameworks for process injection (I/O hijack), xplat networked multiprocess arch, & app deployment/monitoring.
-                              Leveraged Dokan/WPF/WinForms/C++/C#/Detours/DX9/IDA & LAMP.
+                              Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool & colorblind support</a> to hundreds of thousands of players & content creators.
+                              Reversed network protocols, patcher, & asset formats.
+                              Wrote frameworks for process injection (I/O hijack), xplat networked multiprocess, & app deployment/monitoring with
+                              C++/C#/WPF/WinForms/Detours/DX9/IDA & LAMP.
                            </p>
                         </li>
-                        <li>
+                        <!-- <li>
                            <p>
                               Hacked colorblind support into LoL & facilitated game's official implementation, now reaching 7m+ monthly colorblind players.
                            </p>
-                        </li>
+                        </li> -->
                         <!-- <li style="margin-left: 1.5em;">
                            <p>
                               Supported <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a>
@@ -305,15 +316,39 @@ Impact
             </ul>
          </section>
          <section class="resume-block">
-            <h1>Internships</h1>
+            <h1>Internships & Additional Experience</h1>
             <ul>
                <li class="thing">
                   <header>
-                     <h1><a href="https://www.CrowdStrike.com/">CrowdStrike</a></h1>
-                     <address>Seattle, WA</address>
-                     <!-- <time>June 2016 &ndash; Sept. 2016</time> -->
-                     <time>Summer 2016</time>
+                     <h1><a href="https://twitter.com/ghostlybeargame">Ghostly Bear Games</a></h1>
+                     <span class="role">Software Engineer / Researcher (Startup)</span>
+                     <address>Remote / Seattle, WA</address>
+                     <time>Dec. 2017 &ndash; Apr. 2018</time>
+                  </header>
+                  <section>
+                     <ul>
+                        <li>
+                           <p>
+                              Researched and prototyped
+                              group motion planning,
+                              IK,
+                              procedural mesh stitching/retopologizing/skinning/animation, <br />
+                              world & city generation,
+                              3D-printable UGC,
+                              & social blockchain systems.
+                              Evaluated game engine & BaaS solutions.
+                           </p>
+                        </li>
+                     </ul>
+                  </section>
+               </li>
+               <li class="thing">
+                  <header>
+                     <h1><a href="https://www.CrowdStrike.com/">CrowdStrike (Internship)</a></h1>
                      <span class="role">Kernel Engineer on Antivirus</span>
+                     <address>Seattle, WA</address>
+                     <time>June 2016 &ndash; Sept. 2016</time>
+                     <!-- <time>Summer 2016</time> -->
                   </header>
                   <section>
                      <ul>
@@ -331,31 +366,34 @@ Impact
                      </ul>
                   </section>
                </li>
-               <!-- <li class="thing">
-                  <header>
-                     <h1>Miscellaneous Startups and Teams</h1>
-                     <address class="online">Online</address>
-                     <time>March 2015 - July 2015</time>
-                     <span class="role">Software Engineer</span>
-                  </header>
-                  <section>
-                     <ul>
-                        <li>
-                           <p>
-                              Tackled online education, <a href="https://www.reddit.com/r/howtonotgiveafuck/comments/2zuesp/grouptalk_is_a_social_anxiety_exposure_website_in/">matchmaking for individuals with PTSD/Depression/Social-Anxiety</a>, and automated online gaming tourneys.
-                           </p>
-                        </li>
-                     </ul>
-                  </section>
-               </li> -->
                <li class="thing">
                   <header>
-                     <h1><a href="http://www.riotgames.com/">Riot Games</a></h1>
+                     <h1>Two Unnamed Pre-Startups</h1>
+                     <span class="role">Software Engineer (Contractor)</span>
+                     <address class="online">Online</address>
+                     <time>March 2015 - July 2015</time>
+                  </header>
+                  <!-- <section>
+                     <ul>
+                        <li>
+                           Prototyped and user-tested a WebRTC/NodeJS-based
+                           <a href="https://www.reddit.com/r/howtonotgiveafuck/comments/2zuesp/grouptalk_is_a_social_anxiety_exposure_website_in/">mental health support platform</a>
+                           and game tournament platform.
+                        </li> -->
+                        <!--
+                        Tackled online education, <a href="https://www.reddit.com/r/howtonotgiveafuck/comments/2zuesp/grouptalk_is_a_social_anxiety_exposure_website_in/">matchmaking for individuals with PTSD/Depression/Social-Anxiety</a>, and automated online gaming tourneys.
+                        -->
+                     <!-- </ul>
+                  </section> -->
+               <!-- </li> -->
+               <li class="thing">
+                  <header>
+                     <h1><a href="http://www.riotgames.com/">Riot Games (Internship)</a></h1>
+                     <span class="role">League of Legends Matchmaker & Abuse (2014), Ops Tools (2017)</span>
                      <address>Santa Monica, CA</address>
                      <!-- <time>May 2014 &ndash; Aug. 2014</time> -->
                      <!-- <time>June 2017 &ndash; Sept. 2017</time> -->
                      <time title="May 2014 &ndash; Aug 2014 & June 2017 &ndash; Sept 2017">Summer 2014 & 2017</time>
-                     <span class="role">League of Legends Matchmaker & Abuse (2014), Operational Tools (2017)</span>
                   </header>
                   <section>
                     <ul>
@@ -448,7 +486,7 @@ Impact
                </li>
             </ul>
          </section>
-         <section class="resume-block">
+         <section class="resume-block" style="display: none;">
             <h1>Side-Projects</h1>
             <ul>
                <li class="thing">
