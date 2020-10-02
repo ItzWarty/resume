@@ -6,6 +6,7 @@
 @line-height: 1.7em;
 @fluid-block-spacing: 0.7em;
 @thing-spacing: 0.70em;
+@thing-spacing-compact: @thing-spacing * 0.5;
 @name-header-negative-left-margin: -0.02em;
 @name-header-negative-top-margin: -0.18em + @name-header-negative-left-margin;
 @tail-section-negative-margin: @name-header-negative-top-margin;
@@ -14,6 +15,11 @@
 .clearfix() {
   overflow: auto;
   zoom: 1;
+}
+
+.emoji::after {
+   display: inline;
+   content: '\FE0E';
 }
 
 a, a:visited {
@@ -169,7 +175,7 @@ body {
            padding-right: 0%;
 
            > p, > ul {
-              clear: both; padding-left: 2.0em; padding-right: 0.5em;
+              clear: both; padding-left: 1.9em; padding-right: 0.5em;
 
               .single-line { display: block !important; }
               span {
@@ -201,6 +207,10 @@ body {
                    }
                 }
 
+                line-height: @line-height * 0.9;
+                &:not(:last-of-type) {
+                   margin-bottom: @line-height * 0.1;
+                }
                 > h2 {
                    font-family: "Verdana";
                    font-size: 8pt;
@@ -220,13 +230,13 @@ body {
                 > ul {
                    margin-left: 1.5em;
                    margin-top: @line-height * -0.05;
+
                    li {
                       &:before {
                         content: '\203A';
                      }
 
-                     line-height: @line-height * 0.9;
-                     margin-bottom: @line-height * 0.1;
+                     line-height: @line-height * 0.8;
                    }
                 }
              }
@@ -237,6 +247,15 @@ body {
              top: 0;
              right: 0;
            }
+        }
+
+        &.compact {
+          &:not(:last-of-type) { margin-bottom: @thing-spacing-compact; }
+          section {
+            li {
+              margin-top: @line-height * -0.1;
+            }
+          }
         }
      }
    }
