@@ -81,42 +81,51 @@ Impact
                            <p>Graphics lead & core engineer for VR shooter from pre-production to post-production.</p>
                            <ul>
                               <li>
-                                 Integrated in-house realtime PBGI/subdivision renderer.
-                                 Designed compositor for efficiently animating UIs on QC Adreno 540,
-                                 applying motion-sickness-reduction UX research, building scriptable SDF/atlasing tools,
-                                 and consuming &lt;1% of prior CPU load.
+                                 Integrated in-house realtime PBGI/subdiv renderer.
+
+                                 <!-- Led feedback sessions which distilled & ranked artist/designer pain-points. -->
+                                  <!-- gathered & distilled artist/designer pain-points, -->
+                                 <!-- then brainstormed and prioritized tooling and process improvements which -->
+                                 Designed workflows & tools which
+                                 improved art/vfx "productivity by at least 2x"
+                                 <!-- reduced redundant work, -->
+                                 and made perf measurable, iterable, & regression-testable.
+                                 <!-- ended routine instability & work loss, -->
+                                 <!-- helping the growing team scale into production. -->
                               </li>
                               <li>
-                                 Reworked content authoring workflows to scale art/design/eng teams, improving "productivity by at least 2x"
-                                 and making perf measurable, iterable, and regression-tested.
-                                 Led perf budgeting and optimizations, hitting Quest CPU/GPU/MEM/IO perf goals.
+                                 Led multi-disciplinary perf budgeting & numerous optimization efforts.
+                                 Leveraged HW manual insights to hit CPU/GPU/MEM/IO perf goals.
+                                 Ex: Designed 2D compositor & suite of artist-friendly image processing tools (SDF/atlas/etc)
+                                 which reduced key features' CPU loads by 100x+, saving them from the cutting board.
+                                 <!-- applying motion-sickness-reduction UX research, and -->
                               </li>
                               <li>
-                                 Established agile & team-building efforts, led cleanup initiatives which
-                                 matured game prototype for production, ended months of instability & rewrites,
-                                 and enabled server-authoritative networking with client-side prediction, interpolation, and rollback.
+                                 Established agile/team-building efforts. Led refactor of fragile prototype into
+                                 server-authoritative game with client-side prediction, interpolation, & rollback.
+                                 We were production-ready 1 year before other teams.
                               </li>
                               <li>
                                  Implemented outlines, CSG, mesh slicer for overdraw reduction, paletting workflows, render orderer, and numerous VFX.
-                                 Prototyped game's targeting reticles, HUD, indicators, & abilities. Explored network replays & cheat-prevention tech.
+                                 Prototyped targeting reticles, HUD, indicators, & abilities. Explored replays & anti-cheat.
                               </li>
+                              <li>Slashed code iteration times >26x (7m+ to 16s) with a custom Android Package (APK) patcher/deployer.</li>
                            </ul>
                         </li>
                         <li>
-                           Pillar SME for C#/.NET/mono & team SME for graphics/networking.
+                           Pillar SME for C#/.NET/mono. Team SME for gfx/netcode.
                            Mentored mid-level engineer to senior technical bar.
                         </li>
                         <li>
-                           Drafted technical roadmaps and OKRs,
-                           maintained org's telemetry ingest & error pipeline,
-                           drove key data loss recovery effort,
+                           Drew tech roadmaps & OKRs,
+                           maintained org telemetry ingest & error pipeline,
+                           drove key data recovery effort,
                            <br/>
-                           rigged a scrappy build cluster (Terraform/Chef/PostgreSQL) to drive down flakey tests,
+                           reduced flakey tests with a scrappy build cluster (Terraform/Chef),
                            and built 3D modelling UI w/ React Native.
                            <!-- & Redux/Saga. -->
                            <!-- prototyped a client-server testing framework and IoC container for deterministic application bring-up. -->
                         </li>
-                        <li>Slashed code iteration times >26x (7m+ to 16s) by building a custom Android Package (APK) patcher/deployer.</li>
                      </ul>
                   </section>
                </li>
@@ -132,7 +141,7 @@ Impact
                         <li>
                            <!-- , ending months of site-wide regressions -->
                            <!-- and improving maintainability and service stability efforts for -->
-                           <p>Led stability initiative of livestreaming startup, ending months of site-wide outages and maturing team for MS acquisition.
+                           <p>Led stability initiative which ended months of livestreaming site outages and matured team for acquisition.
                               <!-- , migrating all users to Microsoft Accounts and shipping to 300k day 1 CCU with 0 bugs -->
                               <!-- Migrated entire backend from fragile legacy auth to Microsoft Accounts, shipping to 300k day 1 CCU with 0 bugs. -->
                               <!-- and enabling Mixer's native-integration launches to Windows 10 Creator's Update and Xbox One. -->
@@ -144,15 +153,28 @@ Impact
                            </p>
                         </li>
                         <li class="">
-                          <p>Maintained identity/ACL flows from brittle and frequently-regressing to exhaustively documented and tested w/ 100% coverage.</p>
-                           <ul>
-                              <li>Migrated all users to Microsoft SSO with 0 bugs and 300k Day 1 CCU spanning Win10 / Xbox / Mobile / Web.</li>
+                           <p>
+                              Matured legacy identity/ACL system from unmaintainable & frequently regressing to exhaustively documented and tested with 100% path coverage.
+                              Migrated all users to Microsoft SSO with 0 bugs and 300k Day 1 CCU.
+                               <!-- spanning Win10 / Xbox / Mobile / Web. -->
+                           </p>
                               <!-- <li>Bridged backend w/ Xbox Live by implementing RPC library w/ ECDSA P-256 signing in TypeScript w/ 100% coverage.</li> -->
                               <!-- <li>Built flows for linking existing accounts to Microsoft SSO & authenticating Xbox devices as existing users.</li> -->
-                           </ul>
+                           <!-- </ul> -->
                         </li>
                         <li>
-                           <p>Contributions spanned distributed chat/notifications w/ Redis, localization, <span>billing w/ Stripe & Braintree,</span> containerizing stack w/ Docker, <span>hybrid role-based/resource-based access control,</span> <span>video ingest/distribution/player w/ Go,</span> evangelizing test culture, customer service backend integrations, account management, analytics dashboards w/ Grafana/InfluxDB, and geo-blocking.</p>
+                           <p>
+                              Contributions spanned
+                              distributed chat/notifications w/ Node/Redis,
+                              localization,
+                              <span>billing w/ Stripe & Braintree,</span>
+                              <!-- <span>hybrid role-based/resource-based access control,</span> -->
+                              access tokens & permission-grants,
+                              <span>video ingest/distribution/player w/ Go,</span>
+                              evangelizing test culture,
+                              customer service backend integrations,
+                              Dockerizing stack,
+                              analytics dashboards w/ Grafana/InfluxDB, and geo-blocking.</p>
                         </li>
                         <!-- <li> -->
                            <!-- <p> -->
@@ -215,9 +237,10 @@ Impact
                      <ul>
                         <li>
                            <p>
-                              Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool & colorblind support</a> to hundreds of thousands of players & content creators.
-                              Reversed network protocols, patcher, & asset formats.
-                              Wrote frameworks for process injection (I/O hijack), xplat networked multiprocess, & app deployment/monitoring with
+                              Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool</a> to hundreds of thousands of players & content creators.
+                              Hacked-in and facilitated official implementation of colorblind support.
+                              Reversed network protocols, patcher, & asset formats,
+                              wrote frameworks for process injection (I/O hijack), xplat multiprocess, & app deployment/monitoring with
                               C++/C#/WPF/WinForms/Detours/DX9/IDA & LAMP.
                            </p>
                         </li>
@@ -235,8 +258,8 @@ Impact
                         </li> -->
                         <li>
                            <p>
-                              Deployed LoL's largest community wiki, led project prototypes and built sales decks, culminating in multiple successful pitches, team transition to AzubuTV, & a
-                              <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">typhoon relief tournament</a> with custom dynamic stream overlays & modded in-game integrations.
+                              Deployed LoL's largest community wiki, led projects and built sales decks, culminating in successful pitches, team transition to AzubuTV, &
+                              <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">disaster-relief charity tournament</a> with in-map overlays 'Powered by Dargon'.
                            </p>
                         </li>
                         <!-- <li>
@@ -329,14 +352,14 @@ Impact
                      <ul>
                         <li>
                            <p>
-                              Researched and prototyped
-                              group motion planning,
+                              Researched & prototyped
+                              multi-agent motion planning,
                               IK,
-                              procedural mesh stitching/retopologizing/skinning/animation, <br />
                               world & city generation,
                               3D-printable UGC,
-                              & social blockchain systems.
-                              Evaluated game engine & BaaS solutions.
+                              social blockchain systems, and
+                              procedural mesh stitching/skinning/animation,
+                              Evaluated engine & BaaS solutions.
                            </p>
                         </li>
                      </ul>
@@ -360,7 +383,7 @@ Impact
                         <!-- Developed feature extractors for ML-based malware classification and  -->
                         <li>
                            <p>
-                              Built feature extractors for ML malware detector and TDD framework for kernel-user software testing w/ C/C#/VMWare.
+                              Built feature extractors for ML malware detector and TDD framework for kernel-user testing w/ C/C#/VMWare.
                            </p>
                         </li>
                      </ul>
@@ -399,8 +422,8 @@ Impact
                     <ul>
                       <li>
                         <p>
-                          2014: Slashed Korean internet cafe abuse by rewriting legacy system as maintainable microservice linearly-scaled at 100m+ MAU.
-                          Coded tools and bugfixes for LoL matchmaker & built system health monitor with Ruby/Java/MySQL/Coherence and TDD.
+                          2014: Slashed Korean internet cafe match abandonment with a linearly-scaled microservice.
+                          Refactored debt, coded matchmaker tools/bugfixes, and built system health monitoring with Ruby/Java/MySQL/Coherence.
                         </p>
                       </li>
                       <!-- <li>Refactored brittle, high-risk, and monolithic legacy code to maintainable and fault-tolerant microservices w/ TDD.</li> -->
@@ -439,9 +462,10 @@ Impact
                       <li>
                         <p>
                           2017:
-                          Unified internal tools as knowledge graph with Python/GraphQL/React/Redux.
-                          Built Slack integrations for Confluence plugin with Postgres & AWS S3/ECS/SQS/SNS.
-                          Prototyped physics/flocking gameplay in interdisciplinary hackathon with C#/Unity.
+                          Unified internal tools w/ GraphQL/Python/React/Redux.
+                          Built dashboards w/ GCharts/D3 and Slack bots w/ S3/ECS/SQS/SNS/Redshift.
+                          Coded physics/flocking gameplay in interdisciplinary hackathon w/ C#/Unity.
+                           <!-- interdisciplinary hackathon with C#/Unity. -->
                         </p>
                       </li>
                         <!-- <li>
