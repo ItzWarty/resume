@@ -78,7 +78,7 @@ Impact
                   <section>
                      <ul>
                         <li>
-                           <p>Graphics lead & core engineer for VR shooter from pre-production to post-production.</p>
+                           <p>Graphics lead & core engineer for multiplayer VR shooter from pre-production to post-production.</p>
                            <ul>
                               <li>
                                  Integrated in-house realtime PBGI/subdivision renderer.
@@ -93,11 +93,16 @@ Impact
                                  <!-- helping the growing team scale into production. -->
                               </li>
                               <li>
-                                 Organized cross-functional perf budgeting & optimization efforts.
+                                 Led cross-functional perf analysis, budgeting, & optimization.
                                   <!-- hitting device CPU/GPU/MEM/IO goals. -->
 
-                                 Designed 2D-in-3D compositor which reduced key features' CPU loads 100x+ while
-                                 improving graphics fidelity
+                                 Designed UI compositor exploiting low-level GPU architecture to improve 2D-in-3D CPU perf >100x while
+                                 increasing visual fidelity
+                                 <!-- Triangle render order, SDF generation w/ curve for high-res border & glow,
+                                 HW branching support, coherent texture access, texture arrays, mat4x4 paletting,
+                                 Instancing support, transformation matrix w/ Z bias.
+                                 Grounded flag vs jarring head-oriented when tilting head.
+                                 Hardware support for integers & bit-manipulation. Vector packing of time. -->
 
                                  <!-- while improving their maintainability -->
                                  & incorporating novel motion-sickness-reduction techniques.
@@ -106,7 +111,7 @@ Impact
                                  <!-- applying motion-sickness-reduction UX research, and -->
                               </li>
                               <li>
-                                 Led agile/team-building efforts & specced architectural improvements which ended months of routine instability & rewrites
+                                 Established agile/team-building routines & specced architecture & framework which ended months of routine instability & rewrites
                                  and enabled a server-authoritative architecture with client-side prediction, interpolation, & rollback.
                                  <!-- We were production-ready 1 year before other teams. -->
                               </li>
@@ -116,21 +121,22 @@ Impact
                                  paletting & map-variation workflows, render orderer, LOD system, & numerous VFX.
                                  <!-- Explored replays & anti-cheat. -->
                               </li>
-                              <li>Slashed code iteration times >26x (7m+ to 16s) with a custom Android Package (APK) patcher/deployer.</li>
+                              <li>Slashed Unity code iteration times >26x (7m+ to 16s) with a custom Android Package (APK) patcher/deployer.</li>
                            </ul>
                         </li>
                         <li>
-                           Pillar SME for C#/.NET/mono. Team SME for graphics/networking.
+                           Pillar subject-matter-expert for high-perf & parallelized C#/mono.
                            Mentored mid-level engineer to senior technical bar.
                         </li>
                         <li>
                            Drew tech roadmaps & OKRs,
-                           maintained org telemetry ingest & error pipeline,
-                           drove key data recovery effort,
-                           played release eng,
-                           reduced flakey tests w/ a scrappy build cluster (Terraform/Chef),
-                           built org's 0-copy serializer & 3D modelling UI w/ React Native,
-                           and app container (IoC) for modular, testable architecture.
+                           maintained org telemetry ingest & error analysis pipeline,
+                           drove time-sensitive data recovery effort,
+                           did RelEng,
+                           reduced flakey tests w/ a scrappy build cluster (Terraform/Chef) & daemon svc,
+                           built 0-copy serializer & 3D modelling UI w/ React Native,
+                           image processing tools (SDF/atlas),
+                           and IoC container for modular & testable arch. C++/C#/JS/PHP/Ruby/Python.
                            <!-- & Redux/Saga. -->
                            <!-- prototyped a client-server testing framework and IoC container for deterministic application bring-up. -->
                         </li>
@@ -246,10 +252,10 @@ Impact
                         <li>
                            <p>
                               Led a small team of 4 hobbyists, shipping <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends modding tool</a> to hundreds of thousands of players & content creators.
-                              Hacked-in and facilitated official implementation of colorblind support.
+                              Hacked-in & aided official colorblind support.
                               Reversed network protocols, patcher, & asset formats,
-                              wrote frameworks for process injection (I/O hijack), xplat multiprocess, & app deployment/monitoring with
-                              C++/C#/DX9/IDA/LAMP.
+                              wrote libraries for DLL injection (I/O hijack, render overlays), xplat multiprocess, & deployment/monitoring w/
+                              C++/C#/DirectX/D3D/IDA/LAMP/MVC.
                               <!-- <span class='invis'> and WPF/WinForms/Detours/DX9/IDA/LAMP</span>. -->
                            </p>
                         </li>
@@ -530,7 +536,10 @@ Impact
                   <section>
                      <ul>
                         <li>
-                           <p>Building an RTS engine with poly clipping, triangulation, visibility computation, flocking, motion planning, C#-HLSL transpiler.</p>
+                           <p>Building RTS game engine w/ poly clipping, triangulation, visibility computation, flocking, motion planning, C#-HLSL transpiler.</p>
+                        </li>
+                        <li>
+                           <p>Prototyped localization w/ 2D LIDAR/CUDA and marker-based multi-camera tracking solution w/ global & local pose estimation.</p>
                         </li>
                         <!-- <li>
                            <p>
