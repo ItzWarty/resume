@@ -66,7 +66,7 @@ Impact
             </ul>
          </section> -->
          <section class="resume-block">
-            <h1>Full-Time Experience</h1>
+            <h1>Work Experience</h1>
             <ul>
                <li class="thing">
                   <header>
@@ -78,26 +78,41 @@ Impact
                   <section>
                      <ul>
                         <li>
-                           <p>Graphics lead & core engineer for multiplayer VR shooter from pre-production to post-production.</p>
+                           <p>Graphics lead & core engineer for amorphous VR project (shooter game) from pre-production to post-production.</p>
                            <ul>
                               <li>
-                                 Integrated in-house realtime PBGI/subdivision renderer.
+                                 Collaborated with in-house graphics/network/input-engine teams to
+                                 align on technical needs & constraints, continuously integrate bleeding-edge
+                                 features into R&D project, build scalable workflows for creatives, and triage regressions as necessary.
+                              </li>
+                              <li>
+                                 Organized biweekly feedback sessions which converted multidisciplinary pain
+                                 into actionable tool & process improvements.
 
-                                 Championed tools & process improvements which
-                                 improved artist/designer "productivity by at least 2x"
-                                 <!-- reduced redundant work, -->
-                                 and made render performance measurable, iterable, & regression-testable.
+                                 One tool improved art/design "productivity by at least 2x" & made
+                                 render perf measurable, iterable, & regression-testable.
+
+                                 <!-- We simplified art asset collaboration & integration and
+                                 designer A/B testing & grayboxing.
+                                 QA/perf engineer
+                                 and made render performance measurable, iterable, & regression-testable for QA & perf engineers.
+
+                                  -->
                                  <!-- Led feedback sessions which distilled & ranked artist/designer pain-points. -->
                                  <!-- then brainstormed and prioritized tooling and process improvements which -->
                                  <!-- ended routine instability & work loss, -->
                                  <!-- helping the growing team scale into production. -->
                               </li>
                               <li>
-                                 Led cross-functional perf analysis, budgeting, & optimization.
+                                 Led cross-functional perf analysis, budgeting, & optimization planning.
+                                 Exploited low-level GPU architecture to increase 2D-in-3D UI compositing
+                                 CPU perf 100x+ while increasing visual fidelity &
+                                 incorporating novel motion-sickness-reduction techniques.
+
                                   <!-- hitting device CPU/GPU/MEM/IO goals. -->
 
-                                 Designed UI compositor exploiting low-level GPU architecture to improve 2D-in-3D CPU perf >100x while
-                                 increasing visual fidelity
+                                 <!-- Designed UI compositor exploiting low-level GPU architecture to improve 2D-in-3D CPU perf >100x while
+                                 increasing visual fidelity -->
                                  <!-- Triangle render order, SDF generation w/ curve for high-res border & glow,
                                  HW branching support, coherent texture access, texture arrays, mat4x4 paletting,
                                  Instancing support, transformation matrix w/ Z bias.
@@ -105,38 +120,63 @@ Impact
                                  Hardware support for integers & bit-manipulation. Vector packing of time. -->
 
                                  <!-- while improving their maintainability -->
-                                 & incorporating novel motion-sickness-reduction techniques.
+                                 <!-- & incorporating novel motion-sickness-reduction techniques. -->
                                  <!-- while extending functionality. -->
                                  <!-- Leveraged HW manual insights to hit CPU/GPU/MEM/IO perf goals. -->
                                  <!-- applying motion-sickness-reduction UX research, and -->
                               </li>
                               <li>
-                                 Established agile/team-building routines & specced architecture & framework which ended months of routine instability & rewrites
-                                 and enabled a server-authoritative architecture with client-side prediction, interpolation, & rollback.
-                                 <!-- We were production-ready 1 year before other teams. -->
+                                 Setup agile/team-building routines,
+                                 ending months of product instability, rewrites, & unsustainable engineering habits.
+
+                                 Tasked rearchitecture which increased modularity, scalability, security, & velocity.
+
+                                 We were considered 1 year ahead of other teams.
+
+
+                                 <!-- by streamlining asset collaboration & integration, -->
+
+
+                                 <!-- and implemented
+                                 server-authoritative networking with client-side prediction, interpolation, & rollback. -->
+
+                                 <!-- which ended months of hacks & rewrites, modularized the codebase from a 3-file monolith, and enabled
+                                 the team to enter production. -->
+                                 <!-- a server-authoritative networking design with client-side prediction, interpolation, & rollback. -->
                               </li>
                               <li>
-                                 Designed 3D HUD, navigation ground ribbon UX, CSG reticles & indicators, abilities, outline renderer,
-                                 mesh slicer for overdraw reduction, head-in-geo rendering effect,
-                                 paletting & map-variation workflows, render orderer, LOD system, & numerous VFX.
-                                 <!-- Explored replays & anti-cheat. -->
+                                 <!-- Translated abstract product needs into technical visions,
+                                 weaving graphics, computational geometry, and design sense to  -->
+                                 Designed 3D HUD,
+                                 ground-ribbon navigation UX, CSG reticles & indicators,
+                                 mesh slicer for overdraw reduction,
+                                 abilities, outline renderer,
+                                 paletting/map-variation workflows,
+                                 image processing (SDF/atlas),
+                                 render orderer, LOD system,
+                                 <!-- a render orderer, LOD system,  -->
+                                 & numerous VFX.
                               </li>
                               <li>Slashed Unity code iteration times >26x (7m+ to 16s) with a custom Android Package (APK) patcher/deployer.</li>
                            </ul>
                         </li>
                         <li>
-                           Pillar subject-matter-expert for high-perf & parallelized C#/mono.
                            Mentored mid-level engineer to senior technical bar.
+                           Pillar subject-matter-expert for high-perf & parallel/asynchronous C#/mono.
                         </li>
                         <li>
-                           Drew tech roadmaps & OKRs,
-                           maintained org telemetry ingest & error analysis pipeline,
-                           drove time-sensitive data recovery effort,
-                           did RelEng,
-                           reduced flakey tests w/ a scrappy build cluster (Terraform/Chef) & daemon svc,
-                           built 0-copy serializer & 3D modelling UI w/ React Native,
-                           image processing tools (SDF/atlas),
-                           and IoC container for modular & testable arch. C++/C#/JS/PHP/Ruby/Python.
+                           Additionally drew tech roadmaps & OKRs.
+
+                           Pivoted to business-critical launch-blockers:
+                           maintained org telemetry ingest & error analysis pipeline improving throughput >10x &
+                           documenting internals for hand-off to new team.
+
+                           Documented & matured CI pipeline, built tools to drive-down test flakiness
+                           w/ Terraform/Chef/Capirca, worked w/ external company to improve infra uptime.
+
+                            <!-- and
+                           created 0-copy serializer, IoC container, and 3D modelling UIs w/ React Native.
+                            C++/C#/JS/PHP/Ruby/Python. -->
                            <!-- & Redux/Saga. -->
                            <!-- prototyped a client-server testing framework and IoC container for deterministic application bring-up. -->
                         </li>
@@ -155,7 +195,7 @@ Impact
                         <li>
                            <!-- , ending months of site-wide regressions -->
                            <!-- and improving maintainability and service stability efforts for -->
-                           <p>Led stability initiative which ended months of livestreaming site outages and matured team for acquisition.
+                           <p>Led stability initiative which ended months of livestreaming site outages by leveraging CI & automated smoke-tests.
                               <!-- , migrating all users to Microsoft Accounts and shipping to 300k day 1 CCU with 0 bugs -->
                               <!-- Migrated entire backend from fragile legacy auth to Microsoft Accounts, shipping to 300k day 1 CCU with 0 bugs. -->
                               <!-- and enabling Mixer's native-integration launches to Windows 10 Creator's Update and Xbox One. -->
@@ -169,8 +209,8 @@ Impact
                         <li class="">
                            <p>
                               Matured legacy identity/ACL system from unmaintainable & frequently regressing to exhaustively documented and tested with 100% path coverage.
-                              Migrated all users to Microsoft SSO with 0 bugs and 300k Day 1 CCU.
-                               <!-- spanning Win10 / Xbox / Mobile / Web. -->
+                              Worked w/ security / accounts / platform teams to migrate all users to MS SSO with 0 bugs & 300k Day 1 CCU.
+                              <!-- spanning Win10 / Xbox / Mobile / Web. -->
                            </p>
                               <!-- <li>Bridged backend w/ Xbox Live by implementing RPC library w/ ECDSA P-256 signing in TypeScript w/ 100% coverage.</li> -->
                               <!-- <li>Built flows for linking existing accounts to Microsoft SSO & authenticating Xbox devices as existing users.</li> -->
@@ -178,7 +218,7 @@ Impact
                         </li>
                         <li>
                            <p>
-                              Contributions spanned
+                              Collaborations spanned
                               distributed chat/notifications w/ Node/Redis,
                               localization,
                               <span>billing w/ Stripe & Braintree,</span>
@@ -273,7 +313,7 @@ Impact
                         </li> -->
                         <li>
                            <p>
-                              Deployed LoL's largest community wiki, led projects and built sales decks, culminating in successful pitches, team transition to AzubuTV, &
+                              Deployed LoL's largest community wiki, led projects & built sales decks, culminating in successful pitches, team transition to AzubuTV, &
                               <a href="http://lol.gamepedia.com/Pros_Play_for_the_Philippines">disaster-relief charity tournament</a> with in-map overlays 'Powered by Dargon'.
                            </p>
                         </li>
@@ -373,7 +413,8 @@ Impact
                               world & city generation,
                               3D-printable UGC,
                               social blockchain systems, and
-                              procedural mesh stitching/skinning/animation,
+                              procedural mesh stitching/skinning/animation
+                              to inform startup direction.
                               Evaluated engine & BaaS solutions.
                            </p>
                         </li>
@@ -404,13 +445,13 @@ Impact
                      </ul>
                   </section>
                </li>
-               <li class="thing compact">
+               <!-- <li class="thing compact">
                   <header>
                      <h1>Two Unnamed Pre-Startups</h1>
                      <span class="role">Software Engineer (Contractor)</span>
                      <address class="online">Online</address>
                      <time>March 2015 - July 2015</time>
-                  </header>
+                  </header> -->
                   <!-- <section>
                      <ul>
                         <li>
@@ -523,24 +564,40 @@ Impact
                      </ul>
                   </section>
                </li>
+               <!-- <li class="thing compact">
+                  <header>
+                     <h1>Side-Projects</h1> -->
+                     <!-- <span class="role">League of Legends Matchmaker & Abuse (2014), Ops Tools (2017)</span> -->
+                     <!-- <address>Santa Monica, CA</address> -->
+                     <!-- <time>May 2014 &ndash; Aug. 2014</time> -->
+                     <!-- <time>June 2017 &ndash; Sept. 2017</time> -->
+                     <!-- <time title="May 2014 &ndash; Aug 2014 & June 2017 &ndash; Sept 2017">Summer 2014 & 2017</time> -->
+                  <!-- </header>
+                  <section>
+                    <ul>
+                       <li><p>Building RTS game engine w/ poly clipping, triangulation, visibility computation, flocking, motion planning, C#-HLSL transpiler.</p></li>
+                       <li><p>Prototyped localization w/ 2D LIDAR/CUDA and marker-based multi-camera tracking solution w/ global & local pose estimation.</p></li>
+                       <li><p>Coder since the age of 6! Built a JavaScript Game Boy CPU emulator back in middle school & built games/tools with AS2.0 & C#.</p></li>
+                    </ul>
+                  </section>
+               </li> -->
             </ul>
          </section>
          <section class="resume-block">
             <h1>Side-Projects</h1>
             <ul>
-               <li class="thing">
+               <li class="thing compact">
                   <!-- <header>
                      <h1>Side-Projects (<a href="https://github.com/miyu">See More on GitHub</a>)</h1>
                      <time>Early 2000's &ndash; Present</time>
                   </header> -->
                   <section>
                      <ul>
-                        <li>
-                           <p>Building RTS game engine w/ poly clipping, triangulation, visibility computation, flocking, motion planning, C#-HLSL transpiler.</p>
-                        </li>
-                        <li>
-                           <p>Prototyped localization w/ 2D LIDAR/CUDA and marker-based multi-camera tracking solution w/ global & local pose estimation.</p>
-                        </li>
+                        <li><p>Building RTS game engine w/ computational geometry, visibility computation, flocking, motion planning, C#-HLSL transpiler, AVX2.</p></li>
+                        <li><p>Prototyped localization w/ 2D LIDAR/CUDA and marker-based multi-cam tracking solution w/ global & local pose estimation in uni.</p></li>
+                        <!-- <li><p>Coder since the age of 6! Built a JavaScript Game Boy CPU emulator back in middle school + games/tools with AS2.0 & C#.</p></li> -->
+                        <!-- <li><p>Led software groups of high school and college robotics teams. Elected team-wide captain for both, leading & fundraising.</p></li> -->
+                        <li><p>Coder since 6! Led high school/uni robotics SW groups. Elected captain for both. Built JS Game Boy CPU emulator in middle school.</p></li>
                         <!-- <li>
                            <p>
                               Created <a href="http://forums.na.leagueoflegends.com/board/showthread.php?t=722943%255D">League of Legends Add-on Installer</a> with C#/C++ desktop app and PHP server achieving 300k runs/mo. -->
@@ -583,18 +640,10 @@ Impact
                            </p>
                         </li> -->
                         <!-- <li>
-                           <p>Led software groups of high school and college robotics teams. Elected team-wide captain for both, leading & fundraising.</p>
-                        </li> -->
-                        <!-- <li>
                            <p>
                               Building 3D real-time strategy game in C# to explore AI, computational geometry, and robotics (search and motion planning).
                            </p>
                         </li> -->
-                        <li>
-                           <p>
-                              Coder since the age of 6! Built a JavaScript Game Boy CPU emulator back in middle school & built games/tools with AS2.0 & C#.
-                           </p>
-                        </li>
                      </ul>
                   </section>
                </li>
