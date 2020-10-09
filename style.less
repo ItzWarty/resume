@@ -4,10 +4,12 @@
 @debug: false;
 @force-print: false;
 @qr-code-size: 0.55in;
-@line-height: 1.55em;
+@line-height: 1.35em; // most importantly controls spacing between lines in a bullet
+@line-spacing: 0.15em; // spacing between bullets
+@line-height-compact: 1.25em;
 @fluid-block-spacing: 0.7em;
-@thing-spacing: 0.50em;
-@thing-spacing-compact: @thing-spacing * 0.7;
+@thing-spacing: 0.40em;
+@thing-spacing-compact: 0.35em;
 @name-header-negative-left-margin: -0.02em;
 @name-header-negative-top-margin: -0.18em + @name-header-negative-left-margin;
 @tail-section-negative-margin: @name-header-negative-top-margin;
@@ -132,12 +134,13 @@ body {
 
            address {
               order: 3;
-              flex-grow: 1;
+              flex-grow: 1 1 auto;
 
               font-style: normal;
               text-align: left;
               display: none;
               &:before  { font-style: normal; content: '\A0|\A0'; display: inline; }
+              // &:after  { font-style: normal; content: ')'; display: inline; }
            }
 
            time {
@@ -156,7 +159,9 @@ body {
               flex-grow: 1 1 auto;
               // font-weight: bold;
               font-style: italic;
+              text-align: left;
               &when(@debug) { background-color: red; }
+              // &:before { font-style: normal; font-weight: normal;  content: '\A0\2013\A0'; display: inline; }
               &:before { font-style: normal; font-weight:bold;  content: ':\A0'; display: inline; }
            }
         }
@@ -185,6 +190,11 @@ body {
                     font-size: 0;
                     line-height: 0;
                  }
+                 &.tech-list {
+                    // Can't make smaller else words get concatenated like A/B/C
+                    // which might mess with stupid ATSes?
+                    word-spacing: -0.05em;
+                 }
               }
            }
 
@@ -208,9 +218,9 @@ body {
                    }
                 }
 
-                line-height: @line-height * 0.9;
+                line-height: @line-height;
                 &:not(:last-of-type) {
-                   margin-bottom: @line-height * 0.1;
+                   margin-bottom: @line-spacing;
                 }
                 > h2 {
                    font-family: "Verdana";
@@ -229,15 +239,15 @@ body {
                 }
 
                 > ul {
-                   margin-left: 1.5em;
-                   margin-top: @line-height * -0.05;
+                   margin-left: 1.3em;
+                   margin-top: @line-spacing * 0.5;
 
                    li {
                       &:before {
                         content: '\203A';
                      }
 
-                     line-height: @line-height * 0.8;
+                     line-height: @line-height-compact;
                    }
                 }
              }
@@ -254,7 +264,7 @@ body {
           &:not(:last-of-type) { margin-bottom: @thing-spacing-compact; }
           section {
             li {
-              margin-top: @line-height * -0.1;
+              margin-top: @line-height-compact * -0.1;
             }
           }
         }
